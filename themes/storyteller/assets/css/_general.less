@@ -1,0 +1,203 @@
+a, button{
+    outline:none;
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.42857143;
+
+    background-color:@dark_color;
+    color:@light_color;
+}
+
+em{
+    font-style: italic;
+}
+
+iframe {
+    max-width: 100% !important;
+}
+
+article {
+    position: relative;
+    .part {
+        min-height: 100vh;
+        z-index: 1;
+        .background_gradient {
+            background: rgba(0, 0, 0, 0.6);
+            background: -moz-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0, 0, 0, 0.6)), color-stop(100%, rgba(0, 0, 0, 0)));
+            background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -o-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            background: -ms-linear-gradient(left, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            background: linear-gradient(to right, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1);
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            width: 60%;
+            z-index: 1;
+        }
+    }
+    .header {
+        font-weight: 200;
+        z-index: 2;
+        margin-bottom: 2vh;
+        h1 {
+            margin: 0;
+            font-size: 3em;
+            line-height: 1.4em;
+        }
+        h2 {
+            margin: 0;
+            font-size: 1.6em;
+            line-height: 1.2em;
+            font-style: italic;
+        }
+    }
+    .header-fullpage {
+        font-weight: 200;
+        height: 100vh;
+        margin: -10vh auto 0 auto;
+        display: table;
+        .middle {
+            vertical-align: bottom;
+            display: table-cell;
+            padding-bottom: 10vw;
+        }
+        h1 {
+            margin: 0;
+            margin-bottom: 10px;
+            font-size: 5em;
+            line-height: 1.2em;
+        }
+        h2 {
+            margin: 0;
+            font-size: 2.2em;
+            line-height: 1.2em;
+            font-weight: 300;
+        }
+    }
+    a.nextPart {
+        display: inline-block;
+        padding: 3px 6px;
+        background: @dark_color;
+        color: @light_color;
+        &:hover {
+            color: #7fc8e8;
+            text-decoration: none;
+        }
+    }
+}
+
+// content
+blockquote {
+    border-left: 3px solid @light_color;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    font-size: 1.2em;
+    font-weight: 200;
+    font-style: italic;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+pre {
+    font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    display: block;
+    padding: 9.5px;
+    margin: 0px 0px 10px;
+    font-size: 1em;
+    line-height: 1.4em;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: rgb(51, 51, 51);
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 4px;
+}
+
+u {
+    text-decoration: underline;
+}
+
+s {
+    text-decoration: line-through;
+}
+
+.cms-image {
+    margin: 10px 0;
+    figcaption {
+        display: block;
+        text-align: left;
+        padding: 6px 8px;
+        cursor: text;
+        font-family: @content_images_captions_font;
+        font-size: 0.8em;
+        overflow: hidden;
+        line-height: 1.4em;
+        .photographer {
+            display: block;
+            font-family: @content_images_captions_font;
+            font-size: 12px;
+            margin-top: 3px;
+        }
+    }
+}
+
+.cms-image.middle {
+    margin: 10px auto;
+}
+
+
+.cms-image{
+  &.left {
+    float: left;
+    margin: 10px 15px 10px 0;
+  }
+  &.right {
+    float: right;
+    margin: 10px 0 10px 15px;
+  }
+}
+
+.social-buttons{
+  &.credits {
+    bottom: 170px;
+    position: relative;
+    z-index: 999;
+    text-align: center;
+    .fb-share-button {
+      bottom: 5px;
+      margin-right: 10px;
+    }
+  }
+}
+
+.no_credits {
+  .credits {
+    display: none;
+  }
+}
+
+article {
+  .part {
+    // no background gradients
+    &.no_gradient_background {
+      .background_gradient {
+        display: none;
+      }
+      // make sure there are no gradients in the slideshows either
+      .slide_caption {
+        background: none;
+      }
+    }
+  }
+  .part{
+    &.box_text{
+      p {
+        background: rgba(0, 0, 0, 0.3);
+        display: inline;
+      }
+    }
+  }
+}
