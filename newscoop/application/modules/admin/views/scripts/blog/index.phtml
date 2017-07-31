@@ -1,0 +1,7 @@
+<?php
+$translator = \Zend_Registry::get('container')->getService('translator');
+$this->headTitle($translator->trans('Blog management', array(), 'articles').' - Newscoop Admin', 'SET'); ?>
+
+<?php echo $this->form; ?>
+
+<?php $this->list->render(); ?>

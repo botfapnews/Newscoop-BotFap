@@ -1,0 +1,10 @@
+<?php
+require_once($GLOBALS['g_campsiteDir'].'/classes/Article.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/ContextBox.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/Section.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/Issue.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/Publication.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/Language.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/User.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/Input.php');
+?>

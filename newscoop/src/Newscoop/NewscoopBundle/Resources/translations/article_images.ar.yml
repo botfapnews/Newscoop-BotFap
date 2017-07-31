@@ -1,0 +1,78 @@
+'Display newsfeed images': null
+'Mark image': null
+'Add selected images to slideshow': null
+'Sorry that image is too small. Image needs to be at least %dx%d.': 'آسف أن تلك الصورة صغيرة جداً ويجب  أن تكون على الأقل %dx%d‫.‬'
+'Slideshow rendition': 'هيكلة عرض الشرائح'
+'Renditions reloaded': 'تم إعادة تحميل الهيكلات '
+'Reload renditions': 'إعادة تحميل الهيكلات'
+'Edit images': 'عدل الصور'
+'Specify image url if you want to load it.': 'حدد عنوان الكتروني للصورة اذا اردت أن تحميلها'
+'Items: ': 'بنود‫:‬'
+'Attach slideshows': 'أرفق عروض الشرائح'
+'original size:': 'الحجم الأصلي:'
+'no caption': 'لا عنوان فرعي'
+'Video URL': 'رابط الفيديو'
+'Use for all': 'استخدم للكل'
+'Use default': 'استخدم الاختيار الافتراضي'
+'Slug must be unique': 'يجب أن يكون اسم الرسالة فريد من نوعه.'
+Slug: 'اسم الرسالة'
+'Slideshow headline': 'العنوان الرئيسي لعرض الشرائح'
+Slideshow: 'عرض الشرائح'
+'Set selected as default image': 'عين الصورة المختارة كالصورة الافتراضية'
+'Set as default': 'عين افتراضياً'
+Saving...: 'قيد الحفظ...'
+Saved: 'تم الحفظ'
+'Save headline': 'إحفظ العنوان الرئيسي'
+'Place Images': 'ضع صور'
+'No renditions defined.': 'لا توجد هيكلات محدّدة.'
+'No images found.': 'لم يتم العثور على أي صور.'
+'No images attached to article.': 'لا توجد صور مرفقة بالمقال.'
+'No images': 'لا يوجد صور'
+'Next: Upload and Edit Metadata': 'المقبل: إرفع البيانات الوصفية  وعدّلها'
+'Next: Place Images': 'المقبل: ضع الصور'
+'Media Archive': 'أرشيف إعلامي'
+Location: الموقع
+Items: البنود
+Item: بند
+'Image files': 'ملقات صور'
+'Image Files: ': 'ملفات الصور'
+Headline: 'العنوان الرئيسي'
+Finish: أنْهِ
+'Edit Image Data': 'عدل بيانات الصورة'
+'Edit $1': 'عدل $1'
+'Done editing': 'تم إنهاء تعديل'
+Detach: إفصل
+Create: أنش
+Caption: 'عنوان فرعي'
+'Attached images': 'صور مرفقة'
+'Attach & Place': 'أرفق وضع'
+'Add video url (e.g. http://vimeo.com/25083275 for Vimeo, http://youtu.be/1XsPVO61e9w for YouTube)': 'أضف رابط فيديو (على سبيل المثال http://vimeo.com/25083275 لفيميو، http://youtu.be/1XsPVO61e9w ليوتيوب)'
+'Add video': 'أضف فيديو'
+'Add caption': 'أضف عنوان فرعي'
+'Show all': '... إعرض الكل'
+'The image has been removed from the article.': 'تم إزالة الصورة من هذا المقال.'
+'Unable to add new image.': 'غير قادر على إضافة صورة جديدة'
+'Image number $1 already exists': 'الصورة رقم $1 موجودة مسبقا'
+'You do not have the right to change image information.': 'ليس لديك الحق في تغيير معلومات الصور.'
+'The image number specified is already in use.': 'رقم الصورة المحدد قيد الاستخدام مسبقاً.'
+'Image $1 updated.': 'تم تحديث الصورة $1'
+'Image $1 added.': 'تم إضافة الصورة $1.'
+'Edit article': 'عدل المقال'
+'You do not have the right to attach images to articles.': 'ليس لديك الحق في إرفاق صور بمقالات.'
+'You do not have the right to add images.': 'ليس لديك الحق في إضافة صور'
+'Image information': 'معلومات الصورة'
+'Attach New Image': 'أرفق صورة جديدة'
+'Attach Image To Article': 'أرفق الصورة بالمقال'
+'Attach Existing Image': 'أرفق صورة موجودة'
+'Add New Image': 'أرفق صورة جديدة'
+Date<BR><SMALL>(yyyy-mm-dd)</SMALL>: 'التاريخ <br> <SMALL> (اليوم، الشهرة، السنة) </SMALL>'
+'You must select an image file to upload.': 'يجب عليك أن تختار ملف صورة من أجل الرفع'
+'Change image information': 'غير معلومات الصورة'
+'You do not have the right to add images': 'ليس لديك الحق في إضافة صور.'
+'Filter by uploader...': null
+'Slideshow images': null
+'Add items to slideshow': null
+'Attached Slideshows': null
+'Value is required and can''t be empty': null
+'Select all images': null
+'Unselect all images': null

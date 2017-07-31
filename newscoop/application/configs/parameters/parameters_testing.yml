@@ -1,0 +1,25 @@
+parameters:
+    admin:
+        resources:
+            acl:
+                cache: "Doctrine\Common\Cache\ArrayCache"
+    audit:
+        events: false
+    community_feed:
+        events: false
+    doctrine:
+        cache: "array"
+        database:
+            driver: "pdo_sqlite"
+            path: ":memory:"
+        functions:
+            rand: "Newscoop\Query\SqliteRandom"
+   phpSettings:
+        display_startup_errors: true
+        display_errors: true
+    resources:
+        frontController:
+            params:
+                displayExceptions: true
+    scheduler:
+        environment: 'test'

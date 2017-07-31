@@ -1,0 +1,10 @@
+Newscoop\Entity\ArticleType:
+    exclusion_policy: ALL
+    properties:
+        name:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["list", "details"]
+            serialized_name: name
+            since_version: 1.1

@@ -1,0 +1,10 @@
+services:
+    user_attributes:
+        class:      Newscoop\Services\UserAttributeService
+        arguments:  ["@em"]
+        tags:
+            -  { name: kernel.event_listener, event: image.delivered, method: update }
+            -  { name: kernel.event_listener, event: image.approved, method: update }
+            -  { name: kernel.event_listener, event: image.published, method: update }
+            -  { name: kernel.event_listener, event: document.delivered, method: update }
+            -  { name: kernel.event_listener, event: document.approved, method: update }

@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'Εάν συνεχίσετε, το θέμα και όλα τα επιμέρους θέματά του θα αφαιρεθούν από όλα τα άρθρα και θα διαγραφούν.'
+'Delete anyway': 'Διαγραφή ούτως ή άλλως'
+'Reset order': 'Επαναρρύθμιση εντολής'
+'Order changes will be lost. Are you sure you want to continue?': 'Οι αλλαγές εντολής θα χαθούν. Είστε σίγουρος/η ότι θέλετε να συνεχίσετε;'
+'Topics order saved.': 'Η εντολή θεμάτων αποθηκεύτηκε.'
+'Show languages': 'Εμφάνιση γλωσσών'
+'Save order': 'Αποθήκευση εντολής'
+'Click to edit': 'Κάντε κλίκ για επεξεργασία'
+'Add root topic': 'Προσθήκη αρχικού (root) θέματος'
+'Topic was deleted.': 'Το θέμα διαγράφτηκε.'
+'The topic name is already in use by another topic.': 'Το όνομα του θέματος χρησιμοποιείται ήδη από άλλο θέμα.'
+'You must enter a name for the topic.': 'Πρέπει να εισάγετε ένα όνομα για το θέμα.'
+'You must choose a language for the topic.': 'Πρέπει να εισάγετε μια γλώσσα για το θέμα.'
+'This topic has subtopics, therefore it cannot be deleted.': 'Αυτό το θέμα έχει υποθέματα, συνεπώς δεν μπορεί να διαγραφεί.'
+'Add translation:': 'Προσθήκη μετάφρασης:'
+'Add subtopic:': 'Προσθήκη υποθέματος:'
+Top: Αρχή
+'You do not have the right to add topics.': 'Δεν έχετε το δικαίωμα να προσθέσετε θέματα.'
+'You do not have the right to delete topics.': 'Δεν έχετε το δικαίωμα να διαγράψετε θέματα.'
+'Are you sure you want to delete the topic $1?': 'Είστε σίγουρος/η ότι θέλετε να διαγράψετε το θέμα $1;'
+'You do not have the right to change topic name.': 'Δεν έχετε το δικαίωμα να αλλάξετε το όνομα του θέματος.'
+'The topic $1 could not be deleted.': 'Το θέμα $1 δν μπόρεσε να διαγραφεί.'
+'Adding new topic': 'Προσθήκη νέου θέματος'
+'Deleting topic': 'Διαγραφή θέματος'
+'Change topic name': 'Αλλαγή ονόματος του θέματος'
+'There are $1 articles using the topic.': 'Υπάρχουν $1 άρθρα που χρησιμοποιούν το θέμα.'
+'Search for topics': null
+topics:
+    tip: null
+    label:
+        all: null
+        filterbylang: null
+        search: null
+        filterplaceholder: null
+        addroot: null
+        topicname: null
+        expandcollapse: null
+        changename: null
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: null
+    btn:
+        hide: null
+        remove: null
+        edit: null
+        close: null
+        add: null
+        save: null
+        saveandclose: null
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: null
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null

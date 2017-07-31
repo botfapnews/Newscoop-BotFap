@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'თუ განაგრძობთ, მოცემული თემა და ყველა ქვე-თემა გამოეყოფა დანარჩენ სტატიებს, და წაიშლება. '
+'Delete anyway': 'ნებისმიერ შემთხვევაში წაშლა'
+'Reset order': 'თანმიმდევრობის საწყის მდგომარეობაში დაბრუნება'
+'Order changes will be lost. Are you sure you want to continue?': 'თანმიმდევრობის ცვლილება არ დამახსოვრდება. გსურთ გაგრძელება?'
+'Topics order saved.': 'თემების თანმიმდევრობა დამახსოვრდა.'
+'Show languages': 'ენების ჩვენება'
+'Save order': 'თანმიმდევრობის შენახვა'
+'Click to edit': რედაქტირება
+'Add root topic': 'ფუძე თემის დამატება'
+'Topic was deleted.': 'თემა წაიშალა.'
+'The topic name is already in use by another topic.': 'თემის სათაური უკვე გამოყენებულია სხვა თემაზე.'
+'You must enter a name for the topic.': 'თქვენ უნდა აკრიფოთ თემის სახელი.'
+'You must choose a language for the topic.': 'აირჩიეთ თმის ენა'
+'This topic has subtopics, therefore it cannot be deleted.': 'ამ თემას აქვს ქვეთემები, შესაბამისად მისი წაშლა შეუძლებელია.'
+'Add translation:': 'თარგმანის დამატება:'
+'Add subtopic:': 'ქვეთემის დამატება'
+Top: ზედა
+'You do not have the right to add topics.': 'თქვენ არ გაქვთ თემების დამატების უფლება.'
+'You do not have the right to delete topics.': 'თქვენ არ გაქვთ თემების წაშლის უფლება.'
+'Are you sure you want to delete the topic $1?': 'დარწმუნებული ხართ რომ გსურთ $1 თემის წაშლა?'
+'You do not have the right to change topic name.': 'თქვენ არ გაქვთ თემის სახელის შეცვლის უფლება'
+'The topic $1 could not be deleted.': '$1 თემა ვერ წაიშალა.'
+'Adding new topic': 'ახალი თემის დაამტება'
+'Deleting topic': 'თემის წაშლა'
+'Change topic name': 'თემის სახელის შეცვლა'
+'There are $1 articles using the topic.': '$1 სტატია იყენებს ამ თემას.'
+'Search for topics': null
+topics:
+    tip: null
+    label:
+        all: null
+        filterbylang: null
+        search: null
+        filterplaceholder: null
+        addroot: null
+        topicname: null
+        expandcollapse: null
+        changename: null
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: null
+    btn:
+        hide: null
+        remove: null
+        edit: null
+        close: null
+        add: null
+        save: null
+        saveandclose: null
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: null
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null

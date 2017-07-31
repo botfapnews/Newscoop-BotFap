@@ -1,0 +1,66 @@
+comments:
+    label:
+        comments: Kommentarverwaltung
+        menu: Kommentare
+        banned: Gesperrt
+        anonymous: Anonym
+        at: an
+        noentries: 'Es wurden keine Einträge gefunden.'
+        showing: Angezeigt
+        of: von
+        to: zu
+        entries: Eingaben
+        fullarticle: 'Gesamter Artikel'
+        hidden: Verborgen
+        approved: Bewilligt
+        new: Neu
+        editarticle: 'Gehen Sie zu Artikel bearbeiten'
+        section: Rubrik
+        comment: Kommentar
+        replyto: 'Auf  Kommentar antworten'
+        subject: Subjekt
+        ban: 'Nutzer blocken/freistellen'
+        author: Autor
+        date: 'Datum / Kommentar'
+        article: Artikel
+        search: Suche
+        show: Zeigen
+        recommended: Empfohlen
+        unrecommended: 'Empfehlung zurückgenommen'
+        editcomment: Kommentarbearbeitung
+        actions: Aktionen
+        selectstatus: 'Status auswählen'
+        deleted: Löschen
+        alert: Warnung
+        searchholder: 'Suche... (z.B. Name, E-Mail, Subjekt, Kommentar, Artikeltitel)'
+    btn:
+        cancel: Abbrechen
+        submit: Einpflegen
+        unrecommend: 'Empfehlung zurücknehmen'
+        recommend: Empfehlen
+        delete: Löschen
+        reply: Antworten
+        edit: 'Schnell bearbeiten'
+        close: Schliessen
+        okay: Ok
+        filter: Filter
+    msg:
+        deleted: 'Kommentar gelöscht.'
+        commentinarticle: 'Kommentar $4 durch $1 im Artikel $2 ($3)'
+        status:
+            new: neu
+            approved: bewilligt
+            hidden: verborgen
+            single: 'Status des Kommentars ändern zu'
+            all: 'Status der Kommentar ändern zu'
+        error:
+            reach: 'Es kann keine Verbindung zu Newscoop aufgebaut werden. Überprüfen Sie bitte Ihre Internet-Verbindung.'
+            deletefromarticle: 'Kommentar gelöscht von $1 aus dem Artikel $2 ($3)'
+            statuschange: 'Bei Änderung des Kommentarstatus ist ein Fehler aufgetreten'
+            delete: 'Dieser Kommentar konnte nicht gelöscht werden'
+            update: 'Felder können nicht leer sein'
+        sure: 'Der Kommentar wird entgültig gelöscht werden.'
+        suremultiple: 'Die Kommentare werden entgültig gelöscht werden.'
+        first: 'Bitte erst Kommentar/Kommentare auswählen!'
+        surequestion: 'Sind Sie sicher, dass Sie dies tun wollen?'
+        updated: 'Kommentar aktualisiert.'

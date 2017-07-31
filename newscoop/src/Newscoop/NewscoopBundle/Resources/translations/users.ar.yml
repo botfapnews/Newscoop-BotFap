@@ -1,0 +1,225 @@
+'Password confirmation does not match your password.': null
+'Password Confirmation': null
+Website: 'موقع إلكتروني'
+Twitter: null
+'Save profile': null
+'Profile image': null
+Organisation: null
+'Last Name Public': 'جعل إسم العائلة متاح للجميع .'
+Google+: null
+Geolocation: 'الموقع الجغرافي'
+Gender: null
+'First Name Public': null
+Facebook: 'فيس بوك.'
+'Date of birth': 'تاريخ الميلاد .'
+'Allow sending emails': null
+'About me': null
+'User with email %s is registered already.': null
+'Username is used. Please use another one.': null
+Continue: null
+'Accepting terms of use': null
+'send confirmation email': null
+'edit user': null
+'delete user': null
+'Verified profile': null
+'Showing _START_ to _END_ of _TOTAL_ entries': 'قيد العرض _START_ لـ_END_ من _TOTAL_ إدخالات'
+'Send email to user:': null
+'No users found.': null
+'No records found.': 'لم يتم العثور على سجلات.'
+'No entries to show': 'لا إدخالات من أجل الإظهار'
+'Display _MENU_ records': 'إعرض سجلات من _MENU_'
+'Are you sure you want to {action}?': null
+'Active Logins': null
+' - filtering from _MAX_ records': '- قيد التصفية من السجلات _MAX_'
+'User renamed.': 'تمت إعادة تسمية المستخدم.'
+'User attributes': 'سمات المستخدم'
+'Rename user $1': '$1اعد تسمية المستخدم'
+'Username is used already': 'اسم المستخدم قيد الاستخدام'
+'User with id $1 not found': 'لم يتم العثور على المستخدم بالهوية $1'
+'User was deleted.': 'تم حذف المستخدم'
+'User saved': 'تم حفظ المستخدم'
+'User id not specified': 'هوية المستخدم غير محددة'
+'User $1 created': 'تم  انشاء المستخدم $1'
+'Send confirm email': 'ارسل البريد الاكتروني الخاص بالتاكيد'
+'Profile saved.': 'تم حفظ الشاكلة'
+Picture: صورة
+'Password updated': 'تم تحديث كلمة السر'
+None: 'لا شيء'
+'New confirmation email was sent to user.': 'تم ارسال بريد التاكيد للمستخدم'
+'Email is used already': 'البريد الاكتروني قيد الاستخدام '
+'Edit your password': 'عدل كلمة السر'
+'Edit user $1': 'تعديل المستخدم $1'
+'Edit subscriptions': 'تحرير الاشتراكات'
+'Edit profile': 'تعديل الشاكلة'
+'Edit permissions': 'عدل الأذونات'
+'Create new account': 'أنش حساب جديد'
+'Comment ban settings': 'اعدادات تحريم التعليقات'
+'Ban for user $1 saved.': 'تم تسجيل منع المستخدم $1'
+'User account is active': 'حساب المستخدم مفعل'
+'Allow users profile to be publicly displayed': 'السماح لشاكلة المستخدم أن يعرض علنا'
+'Allow user access to login to site backend': 'اسمح للمستخدم ولوج منطقة المشرف '
+Templates: نماذج
+Username: 'اسم المستخدم'
+'Last Name': 'اسم العائلة'
+'First Name': 'الاسم الاول'
+Email: 'بريد إلكتروني'
+'You were logged out.': 'تم تسجيل خروجك'
+'Newscoop Subhead': 'عنوان فرعي لـ نيوسكوب.'
+Filters: 'عوامل التصفية'
+'Add new Author': 'اضف مؤلف جديد'
+'Loading Data': 'بتم تحميل البيانات'
+'Delete author type': ' احذف نوع المؤلف '
+'Cannot remove author type.': ' لا تمكن إزالة نوع المؤلف '
+'Cannot remove author alias.': 'لا تمكن إزالة اسم المؤلف المتسعار'
+'Author alias removed.': 'تمت ازالة اسم المؤلف  المستعار'
+'Are you sure you want to delete this author?': 'هل أنت متأكد من أنك تريد حذف هذا المؤلف؟'
+'Are you sure you want to delete this author alias?': 'هل أنت متأكد من أنك تريد حذف هذا الاسم المستعار للمؤلف؟'
+'All Author Types': 'جميع أنواع المؤلفين '
+'Add author type': 'إضافة نوع مؤلف'
+'You do not have the permission to change authors.': 'ليس لديك الأذن لتغيير المؤلفين.'
+'Please fill at least first name and last name.': 'يرجى ملء الاسم الأول واسم العائلة على الأقل.'
+'Cannot add author type, this type already exists.': 'غير قادر على إضافة نوع المؤلف، هذا النوع موجود مسبقا'
+'Author type removed.': 'تمت ازالة نوع المؤلف'
+'Author type must be at least three characters long.': 'يجب ألا يقل نوع المؤلف عن ثلاثة أحرف'
+'Author type added.': 'تمت اضافة نوع المؤلف'
+'Are you sure you want to delete this author type?': 'هل أنت متأكد من أنك تريد حذف هذا النوع من المؤلف؟'
+'User may change authors': 'يمكن للمستخدم تغيير المؤلف'
+'Unable to add new image, target directory is not writable.': 'غير قادر على إضافة صورة جديدة، الدليل المستهدف غير قابل للكتابة'
+'Author saved.': 'تم حفظ المؤلف'
+'Author deleted.': 'تم حذف المؤلف'
+'Enable Firefox spell checking by default': 'تمكين التدقيق الإملائي لفايرفوكس بشكل افتراضي'
+'User may use the editor status bar': 'يمكن للمستخدم استخدام شريط المحرر'
+'User may clear up the system cache': 'يمكن للمستخدم مسح ذاكرة النظام الخبيئة'
+'Another user is registered with that e-mail address, please choose a different one.': 'يوجد مستخدم آخر مسجل تحت عنوان البريد الالكتروني فيرجى اختيار عنوان آخر. '
+'There was an error when trying to update the user info.': 'حدث خطأ عند محاولة تحديث معلومات المستخدم'
+'User may moderate comments': 'يستطيع المستخدم تعديل التعليقات'
+'User may enable comments': 'يستطيع المستخدم تمكين التعليقات'
+'User may translate articles': 'يحق للمستخدم ترجمة المقالات'
+'User may move articles': 'يحق للمستخدم نقل المقالات'
+'User may find and replace': 'يحق للمستخدم البحث الاستبدال'
+'User may change system preferences': 'يحق للمستخدم تغيير إعدادات النظام'
+'User may attach topics to articles': 'يحق للمستخدم إضافة المواضيع للمقالات'
+'User may attach images to articles': 'يحق للمستخدم إضافة الصور للمقالات'
+'User may add special characters': 'يحق للمستخدم إضافة حروف خاصة'
+'That user name already exists, please choose a different login name.': 'اسم المستخدم ذلك قيد الاستخدام مسبقاً، يرجى الاختيار اسم تسجيل دخول مختلف.'
+'User may delete article attachments': 'يحق للمستخدم حذف مرفقات المقالة.'
+'User may change article attachments': 'يحق للمستخدم تعديل مرفقات المقالة.'
+'User may add article attachments': 'يحق للمستخدم إضافة مرفقات المقالة.'
+'You do not have the right to create user accounts.': 'ليس لديك الحق في إنشاء حسابات مستخدم.'
+'You must select a $1': '$1 عليك الاختيار '
+'The password must be at least 6 characters long and both passwords should match.': 'يجب أن تتألف كلمة السر من 6 أحرف على الأقل. كما يجب أن تكون كلمتا السر متشابهتين'
+'The user account could not be created.': 'لم ينشئ حساب المستخدم'
+'User account $1 was created successfully.': 'تم إنشاء حساب المستخدم $1 بنجاح.'
+'You do not have the right to change user account permissions.': 'ليس لديك الحق في تغيير أذنات حساب المستخدم'
+'You do not have the right to change user account information.': 'ليس لديك الحق في تغيير معلومات حساب المستخدم'
+'The password you typed is incorrect.': 'كلمة السر التي طبعتها غير صحيحة'
+'You do not have the right to delete user accounts.': 'ليس لديك الحق في حذف حسابات مستخدمين'
+'User account $1 was deleted successfully.': 'تم حذف حساب المستخدم $1 بنجاح.'
+'The IP Group $1 has been created.': 'أنشأت مجموعة بروتوكول الانترنت  $1.'
+'There was an error creating the IP address group.': 'حدث خطأ أثناء إنشاء مجموعة عنوان بروتوكول الانترنت.'
+'The IP address group $1 has been deleted.': 'تم حذف مجموعة عنوان بروتوكول الانترنت $1.'
+'User $1 information was changed successfully.': 'تم تعديل معلومات المستخدم $1 بنجاح'
+'User Type': 'نوع مستخدم'
+'The IP address group $1:$2 conflicts with another existing group.': 'مجموعة عنوان بروتوكوب الانترنت $1:$2 تتعارض مع مجموعة موجودة حاليا.'
+'User may add/change publications': 'يحق للمستخدم إضافة وتعديل منشورات'
+'Invalid value of user type parameter': 'قيمة غير صالحة في متغير من نوع مستخدم'
+'User may delete publications': 'يحق للمستخدم حذف منشورات'
+'User may add/change issues': 'يحق للمستخدم إضافة وتعديل اصدارات'
+'User may delete issues': 'يحق للمستخدم حذف إصدارات'
+'User may add/change sections': 'يحق للمستخدم إضافة وتعديل أقسام'
+'User may delete sections': 'يحق للمستخدم حذف أقسام'
+'User may add articles': 'يحق للمستخدم إضافة مقالات'
+'User may change articles': 'يحق للمستخدم تعديل المقالات'
+'User may delete articles': 'يحق للمستخدم حذف مقالات'
+'User may add images': 'يحق للمستخدم إضافة صور'
+'User may change images': 'يحق للمستخدم تعديل صور'
+'User may delete images': 'يحق للمستخدم حذف صور'
+'User may delete templates': 'يحق للمستخدم حذف قوالب'
+'User may add/change staff accounts and passwords': 'يحق للمستخدم إضافة/تعديل حسابات طاقم العمل وكلمات السر له'
+'User may add/change subscribers accounts and passwords': 'يحق للمستخدم إضافة وتعديل حسابات المشتركين وكلمات السر لهم'
+'User may delete staff accounts': 'يحق للمستخدم حذف حسابات طاقم العمل'
+'User may manage user subscriptions': 'يحق للمستخدم إدارة إشتراكات المستخدمين'
+'User may manage account types': 'يحق للمستخدم إدارة أنواع الحسابات'
+'User may add/change article types': 'يحق للمستخدم إضافة وتعديل أنواع المقالات'
+'User may delete article types': 'يحق للمستخدم حذف أنواع المقالة'
+'User may manage templates': 'يحق للمستخدم إدارة قوالب'
+'User may add/change country entries': 'يحق للمستخدم إضافة وتعديل إدخالات دول'
+'User may add languages and manage language information': 'يحق للمستخدم إضافة اللغات وإدارة معلومات لغوية'
+'User may delete languages': 'يحق للمستخدم حذف لغات'
+'User may view audit logs': 'يحق للمستخدم أن يرى سجلات الأداء'
+'User may delete country entries': 'يحق للمستخدم حذف إدخالات دول'
+'User may manage localizer': 'يحق للمستخدم إدارة محدد الموقع'
+'User may publish articles': 'يحق للمستخدم نشر مقالات'
+'User may manage topics': 'يحق للمستخدم إدارة مواضيع'
+'User may use bold': 'يحق للمستخدم إستخدام الخط الثخين الأسود'
+'User may use italic': 'يحق للمستخدم إستخدام الخط المائل'
+'User may use underline': 'يحق للمستخدم إستخدام الخط المسطر'
+'User may use strikethrough': 'يحق للمستخدم إستخدام التسطير الوسطي'
+'User may change text alignment': 'يحق للمستخدم تغيير محاذاة النص'
+'User may copy, cut, and paste': 'يحق للمستخدم إستخدام الحافظة'
+'User may undo/redo': 'يحق للمستخدم إستخدام الغاء وإعادة الإجراء'
+'User may change text direction': 'يحق للمستخدم تغيير إتجاة الخط'
+'User may set indents': 'يحق للمستخدم تحديد المسافة البادئة'
+'User may add links': 'يحق للمستخدم إضافة روابط'
+'User may add subheads': 'يحق للمستخدم إضافة عناوين فرعية'
+'User may insert images': 'يحق للمستخدم إدخال صور'
+'User may view the HTML source': 'يحق للمستخدم رؤية نص الـHTML'
+'User may enlarge the editor': 'يحق للمستخدم تكبير المحرر'
+'User may change the font face': 'يحق للمستخدم تغيير نمط الحرف'
+'User may change the font size': 'يحق للمستخدم تغيير حجم الحرف'
+'User may create bulleted lists': 'يحق للمستخدم تكوين قوائم منقطة'
+'User may create numbered lists': 'يحق للمستخدم تكوين قوائم مرقمة'
+'User may insert tables': 'يحق للمستخدم إضافة جداول'
+'User may insert horizontal rules': 'يحق للمستخدم إستخدام الخطوط الافقية'
+'User may change the font color': 'يحق للمستخدم تغيير لون الخط'
+'User may use superscripts': 'يحق للمستخدم إستخدام النص العلوي'
+'User may use subscripts': 'يحق للمستخدم إستخدام النص السفلي'
+'User may backup and restore the site data': 'يستطيع المستخدم أن ينسخ بياتات الموقع احتياطيا وأن يستعيدها'
+Miscellaneous: متفرقات
+'Staff/Subscribers Management': 'إدارة طاقم العمل/المشتركين'
+'Editor Basic Settings': 'إعدادات المحرر الاساسية'
+'Editor Advanced Font Settings': 'إعدادات خط المحرر المتقدمة'
+'Editor Table Settings': 'إعدادات جدول المحرر'
+'Administrative tasks': 'مهام إدارية'
+'User will be notified on several events': 'سيتم تنبية المستخدم على العديد من الأحداث'
+'Editor Miscellaneous Settings': 'إعدادات المحرر الاخرى'
+'No such user account.': 'لا يوجد مثل حساب مستخدم'
+'User image (full-size)': null
+'User account is highlighted as "featured account"': null
+'Custom attribute...': null
+'An author with the same full name (combination of first and last name) already exists.': null
+users:
+    label:
+        title: 'البحث الخاص بالمستخدمين'
+    menu:
+        manage: 'إدارة المستخدمين'
+    created: 'تم الانشاء'
+    updated: null
+    status:
+        status: الحالة
+        registered: null
+        pending: null
+        deleted: 'تم الحذف'
+        active: 'قيد الاستخدام'
+    table:
+        actions:
+            actions: الاجراءات
+            edit: تعديل
+            resend_email: null
+            rename: null
+            remove: إزالة
+        confirm_remove: null
+        table_messages:
+            page: null
+            perPageText: null
+            pageText: null
+            recordCountPageBoundTemplate: null
+            recordCountPageUnboundedTemplate: null
+            recordCountTotalTemplate: null
+            recordCountFilteredTemplate: null
+            recordCountText: null
+            recordCountTextTemplate: null
+            recordCountTemplate: null
+            processingText: 'في عملية المعالجة...'
+    chart:
+        title: 'عمليات تسجيل الدخول النشطة'

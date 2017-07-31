@@ -1,0 +1,210 @@
+services:
+    newscoop_newscoop.routing.loader.plugins:
+        class: Newscoop\NewscoopBundle\Routing\PluginsLoader
+        arguments: ["@newscoop.plugins.manager", "@service_container"]
+        tags:
+            - { name: routing.loader }
+
+    newscoop_newscoop.doctrine.event_dispatcher_proxy:
+        class: Newscoop\Doctrine\EventDispatcherProxy
+        arguments: ["@event_dispatcher"]
+        tags:
+            - { name: doctrine.event_subscriber, connection: default }
+
+    newscoop_newscoop.menu_builder:
+        class: %newscoop_newscoop.menu_builder.class%
+        arguments: ["@knp_menu.factory", "@service_container"]
+
+    newscoop_newscoop.menu.main:
+        class: Knp\Menu\MenuItem # the service definition requires setting the class
+        factory_service: newscoop_newscoop.menu_builder
+        factory_method: mainMenu
+        tags:
+            - { name: knp_menu.menu, alias: main } # The alias is what is used to retrieve the menu
+
+    newscoop_newscoop.menu.main_modern:
+        class: Knp\Menu\MenuItem # the service definition requires setting the class
+        factory_service: newscoop_newscoop.menu_builder
+        factory_method: mainMenu
+        arguments:
+            - true
+        tags:
+            - { name: knp_menu.menu, alias: main_modern } # The alias is what is used to retrieve the menu
+
+    newscoop_newscoop.menu.breadcrumb:
+        class: Knp\Menu\MenuItem # the service definition requires setting the class
+        factory_service: newscoop_newscoop.menu_builder
+        factory_method: mainBreadcrumb
+        tags:
+            - { name: knp_menu.menu, alias: breadcrumb } # The alias is what is used to retrieve the menu
+
+    newscoop_newscoop.twig.newscoop_extension:
+        class: Newscoop\NewscoopBundle\Twig\NewscoopExtension
+        arguments:
+            - @service_container
+        tags:
+            - { name: twig.extension }
+
+    newscoop_newscoop.twig.include_as_verbatim_extension:
+        class: Newscoop\NewscoopBundle\Twig\IncludeAsVerbatimExtension
+        tags:
+            - { name: twig.extension }
+
+    newscoop_newscoop.password_encoder:
+        class: Newscoop\NewscoopBundle\Security\Encoder\NewscoopPasswordEncoder
+
+    newscoop_newscoop.security.authentication.success_handler:
+        class: %newscoop_newscoop.security.authentication.success_handler.class%
+        public: false
+        arguments:  ['@security.http_utils', {}, '@auth.adapter', '@em', '@user']
+
+    newscoop_newscoop.security.authentication.frontend.success_handler:
+        class: %newscoop_newscoop.security.authentication.frontend.success_handler.class%
+        public: true
+        arguments:  ['@security.http_utils', {}, '@auth.adapter', '@user']
+
+    newscoop_newscoop.security.logout.success_handler:
+        class: %newscoop_newscoop.security.logout.success_handler.class%
+        public: false
+        arguments:  ['@security.http_utils', '/', '@security.context']
+
+    newscoop_newscoop.security.frontend.logout.success_handler:
+        class: %newscoop_newscoop.security.frontend.logout.success_handler.class%
+        public: false
+        arguments:  ['@security.http_utils', '/', '@security.context']
+
+    newscoop_newscoop.security.oauth.success_handler:
+        class: %newscoop_newscoop.security.oauth.success_handler.class%
+        public: false
+        arguments:  ['@security.http_utils', {}, '@auth.adapter', '@user']
+
+    newscoop_newscoop.security.oauth.logout.success_handler:
+        class: %newscoop_newscoop.security.oauth.logout.success_handler.class%
+        arguments:  ['@security.http_utils', '@security.context']
+
+    newscoop_newscoop.publication_service:
+        class: Newscoop\Services\PublicationService
+        arguments:  ["@em", "@newscoop.cache"]
+
+    newscoop_newscoop.listener.publication:
+        class: Newscoop\NewscoopBundle\EventListener\PublicationListener
+        arguments:  ["@newscoop_newscoop.publication_service"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest, priority: 7 }
+
+    newscoop.publication_service:
+        alias: newscoop_newscoop.publication_service
+
+    newscoop_newscoop.issue_service:
+        class: Newscoop\Services\IssueService
+        arguments:  ["@em", "@newscoop_newscoop.publication_service", "@newscoop.cache"]
+
+    newscoop_newscoop.listener.locale_listener:
+        class: Newscoop\NewscoopBundle\EventListener\LocaleListener
+        arguments: ["@newscoop.cache", "@em", "@translator"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest }
+            - { name: kernel.event_listener, event: kernel.response, method: onResponse }
+
+    newscoop_newscoop.listener.issue:
+        class: Newscoop\NewscoopBundle\EventListener\IssueListener
+        arguments:  ["@newscoop_newscoop.issue_service"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest }
+
+    newscoop_newscoop.listener.route_listener:
+        class: Newscoop\NewscoopBundle\EventListener\RouteListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest, priority: 30 }
+        arguments:  ['@newscoop.listpaginator.service']
+
+    newscoop_newscoop.listener.no_cache_listener:
+        class: Newscoop\NewscoopBundle\EventListener\NoCacheListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.response, method: onResponse }
+
+    newscoop_newscoop.translation_listener:
+        class: Newscoop\NewscoopBundle\EventListener\OldPluginsTranslationListener
+        arguments:  ['@translator', '@newscoop.cache', '@newscoop.plugins.service']
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest }
+
+    system_preferences_service:
+        alias: preferences
+
+    newscoop_newscoop.session.storage:
+        class:     %newscoop_newscoop.session.storage.class%
+        arguments: [%session.storage.options%, "@system_preferences_service"]
+
+    newscoop_newscoop.criteria.users:
+        class: Newscoop\User\UserCriteria
+
+    newscoop_newscoop.template_lists.users:
+        class:      Newscoop\TemplateList\UsersList
+        arguments:  ["@newscoop_newscoop.criteria.users"]
+        tags:
+            -  { name: newscoop.template_lists }
+
+    newscoop_newscoop.list_objects.listener:
+        class: Newscoop\NewscoopBundle\EventListener\ListObjectsListener
+        tags:
+          - { name: kernel.event_listener, event: newscoop.listobjects.register, method: registerObjects }
+
+    newscoop_newscoop.themes_service:
+        class: Newscoop\Services\ThemesService
+        arguments:  ["@newscoop_newscoop.issue_service", "@newscoop.cache", "@newscoop_newscoop.publication_service", "@em"]
+
+    newscoop_newscoop.issue_service:
+        class: Newscoop\Services\IssueService
+        arguments:  ["@em", "@newscoop_newscoop.publication_service", "@newscoop.cache"]
+
+    newscoop_newscoop.themes_service:
+        class: Newscoop\Services\ThemesService
+        arguments:  ["@newscoop_newscoop.issue_service", "@newscoop.cache", "@newscoop_newscoop.publication_service", "@em"]
+
+    newscoop_newscoop.listener.userip:
+        class: Newscoop\NewscoopBundle\EventListener\UserIpListener
+        arguments:  ["@user"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest }
+
+    newscoop_newscoop.article_service:
+        class: Newscoop\Services\ArticleService
+        arguments:  ["@em"]
+
+    newscoop_newscoop.topic_service:
+        class: Newscoop\NewscoopBundle\Services\TopicService
+        arguments:  ["@em", "@dispatcher"]
+
+    newscoop_newscoop.listener.article:
+        class: Newscoop\NewscoopBundle\EventListener\ArticleListener
+        arguments:  ["@newscoop_newscoop.article_service"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onRequest }
+
+    newscoop_newscoop.listener.access_denied:
+        class: Newscoop\NewscoopBundle\EventListener\AccessDeniedExceptionListener
+        arguments:  ["@service_container"]
+        tags:
+            - { name: kernel.event_listener, event: kernel.exception, method: onKernelException }
+
+    newscoop_newscoop.simple_user_provider:
+        class: Newscoop\NewscoopBundle\Security\User\SimpleUserProvider
+        arguments: ["@em", %simple_security%]
+
+parameters:
+    smarty.extension.routing.class: "Newscoop\\NewscoopBundle\\Extension\\RoutingExtension"
+    smarty.extension.assetic.dynamic.class: "Newscoop\\NewscoopBundle\\Extension\\DynamicAsseticExtension"
+    smarty.extension.assetic.static.class: "Newscoop\\NewscoopBundle\\Extension\\StaticAsseticExtension"
+    newscoop_newscoop.security.authentication.success_handler.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\AuthenticationSuccessHandler"
+    newscoop_newscoop.security.authentication.frontend.success_handler.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\AuthenticationFrontendSuccessHandler"
+    security.authentication.failure_handler.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\AuthenticationFailedHandler"
+    newscoop_newscoop.security.logout.success_handler.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\LogoutSuccessHandler"
+    newscoop_newscoop.security.frontend.logout.success_handler.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\FrontendLogoutSuccessHandler"
+    security.authentication.listener.form.class: "Newscoop\\NewscoopBundle\\EventListener\\CaptchaUsernamePasswordFormAuthenticationListener"
+    newscoop_newscoop.menu_builder.class: "Newscoop\\NewscoopBundle\\Menu\\Builder"
+    newscoop_newscoop.session.storage.class: "Newscoop\\NewscoopBundle\\Session\\Storage"
+    ewz_recaptcha.form.type.class: "Newscoop\\NewscoopBundle\\Form\\Type\\RecaptchaType"
+    security.authentication.rememberme.services.simplehash.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\InteractiveLogin"
+    newscoop_newscoop.security.oauth.success_handler.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\OAuthSuccessHandler"
+    newscoop_newscoop.security.oauth.logout.success_handler.class: "Newscoop\\NewscoopBundle\\Security\\Http\\Authentication\\OAuthLogoutSuccessHandler"

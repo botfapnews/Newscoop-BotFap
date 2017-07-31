@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'если вы продолжите, темы и подтемы будут откреплены от всех статей и удалены.'
+'Delete anyway': 'Удалить в любом случае'
+'Reset order': 'Переустановка порядка следования'
+'Order changes will be lost. Are you sure you want to continue?': 'Изменения порядка были утеряны. Вы уверены, что хотите продолжить?'
+'Topics order saved.': 'Порядок тем сохранен.'
+'Show languages': 'Отобразить языки'
+'Save order': 'Сохранить порядок следования.'
+'Click to edit': 'Кликните для редактирования'
+'Add root topic': 'Добавить основную тему'
+'Topic was deleted.': 'Тема удалена.'
+'The topic name is already in use by another topic.': 'Это имя уже используется другой темой.'
+'You must enter a name for the topic.': 'Вы должны ввести название темы.'
+'You must choose a language for the topic.': 'Вы должны выбрать язык для темы.'
+'This topic has subtopics, therefore it cannot be deleted.': 'Эта тема имеет подтему, следовательно не может быть удалена.'
+'Add translation:': 'Добавить перевод:'
+'Add subtopic:': 'Добавить подтему:'
+Top: Верх
+'You do not have the right to add topics.': 'Вы не имеете прав доступа для добавления новых тем.'
+'You do not have the right to delete topics.': 'Вы не имеете прав доступа для удаления новых тем.'
+'Are you sure you want to delete the topic $1?': 'Вы уверены, что хотите удалить тему $1?'
+'You do not have the right to change topic name.': 'Вы не имеете прав доступа для переименования тем.'
+'The topic $1 could not be deleted.': 'Невозможно удалить тему $1'
+'Adding new topic': 'Добавление новой темы'
+'Deleting topic': 'Удаление темы'
+'Change topic name': 'Переименовать тему'
+'There are $1 articles using the topic.': 'Тема используется в $1 статье(-ях).'
+'Search for topics': 'Искать темы'
+topics:
+    tip: 'В Newscoop темы привязываются редакторами и журналистами к статьям, чтобы связанные статьи могли определяться и отображаться вместе. Основная тема может иметь много вложенных тем, н-р: для темы спорт вложенными темами будут футбол, баскетбол, водное поло. К статье можно привязать несколько основных или вложенных тем. '
+    label:
+        all: Все
+        filterbylang: 'Показать темы на языке'
+        search: Поиск
+        filterplaceholder: 'Наберите часть названия темы...'
+        addroot: 'Добавить основную тему'
+        topicname: 'Название темы'
+        expandcollapse: развернуть/свернуть
+        changename: 'Переименовать тему'
+        for: для
+        addsubtopic: 'Добавить вложенную тему'
+        subtopicname: 'Название вложенной темы'
+        addtranslation: 'Добавить перевод:'
+        topictranslations: 'Переводы темы'
+        choose: Выбрать...
+        translationstring: 'Строка перевода'
+        tree: 'Структура тем'
+    title: Темы
+    btn:
+        hide: Скрыть
+        remove: 'Удалить тему'
+        edit: 'Редактировать тему'
+        close: Закрыть
+        add: Добавить
+        save: Сохранить
+        saveandclose: 'Сохранить и закрыть'
+        removetrans: 'Удалить перевод темы'
+    alerts:
+        languagenotfound: 'Не удалось найти язык по коду : %locale%'
+        translationadded: 'Добавлен перевод'
+        translationexists: 'Перевод на  %locale% уже существует!'
+        beforedelete: 'Вы действительно хотите удалить эту тему?'
+        wrongparams: null
+        ordersaved: 'Порядок сохранен.'
+        saved: 'Сохранение завершено.'
+        beforedeleteinfo: 'При удалении тем, имеющих вложенные темы, все вложенные вместе с переводами будут безвозвратно удалены. Вы уверены, что хотите этого?'
+    added: 'Тема добавлена'
+    failedfind: 'Не удалось найти тему по id: %id%'
+    failedfindTranslation: 'Не удалось найти перевод темы по id: %id%'
+    removed: 'Тема %title% удалена'
+    exists: 'Такая тема уже существует'
+    existsname: 'Название темы уже существует'
+    removedTranslation: 'Перевод темы удален'
+    failedremoveTranslation: 'Невозможно удалить основной перевод темы. Удалите саму тему.'
+    updated: 'Тема обновлена'
+    error: 'Произошла ошибка, повторите позже.'
+    csrfinvalid: null
+    tooshort: 'Название темы слишком короткое.'
+    toolong: 'Название темы слишком длинное.'
+    attachtopics: 'Прикрепить темы'
+    attachedtopics: null
+    attached: 'Эта тема связана с %occurence% статьей(статьями). При ее удалении она будет автоматически откреплена от всех этих статей. Если у нее были вложенные темы, они также будут откреплены. '

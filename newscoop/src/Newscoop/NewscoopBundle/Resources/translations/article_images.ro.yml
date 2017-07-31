@@ -1,0 +1,78 @@
+'Display newsfeed images': null
+'Mark image': null
+'Add selected images to slideshow': null
+'Sorry that image is too small. Image needs to be at least %dx%d.': null
+'Slideshow rendition': null
+'Renditions reloaded': null
+'Reload renditions': null
+'Edit images': null
+'Specify image url if you want to load it.': null
+'Items: ': null
+'Attach slideshows': null
+'original size:': null
+'no caption': null
+'Video URL': null
+'Use for all': null
+'Use default': null
+'Slug must be unique': null
+Slug: null
+'Slideshow headline': null
+Slideshow: null
+'Set selected as default image': null
+'Set as default': null
+Saving...: null
+Saved: null
+'Save headline': null
+'Place Images': null
+'No renditions defined.': null
+'No images found.': null
+'No images attached to article.': null
+'No images': null
+'Next: Upload and Edit Metadata': null
+'Next: Place Images': null
+'Media Archive': 'Arhivă media'
+Location: null
+Items: null
+Item: null
+'Image files': null
+'Image Files: ': null
+Headline: null
+Finish: null
+'Edit Image Data': null
+'Edit $1': null
+'Done editing': null
+Detach: null
+Create: null
+Caption: null
+'Attached images': null
+'Attach & Place': null
+'Add video url (e.g. http://vimeo.com/25083275 for Vimeo, http://youtu.be/1XsPVO61e9w for YouTube)': null
+'Add video': null
+'Add caption': null
+'Show all': null
+'The image has been removed from the article.': null
+'Unable to add new image.': 'Nu pot sa ataşez imaginea.'
+'Image number $1 already exists': 'Imaginea cu numărul $1 există deja'
+'You do not have the right to change image information.': 'Nu ai dreptul să schimbi informaţiile despre imagine.'
+'The image number specified is already in use.': 'Numărul specificat al imaginii este deja folosit.'
+'Image $1 updated.': 'Imaginea $1 a fost actualizată.'
+'Image $1 added.': 'Imaginea $1 a fost adăugată.'
+'Edit article': 'Modifică articolul'
+'You do not have the right to attach images to articles.': 'Nu ai dreptul să ataşezi imagini la articole.'
+'You do not have the right to add images.': 'Nu ai dreptul să adaugi imagini.'
+'Image information': 'Informaţii despre imagine'
+'Attach New Image': 'Ataşează o imagine nouă'
+'Attach Image To Article': 'Ataşează imaginea la articol'
+'Attach Existing Image': 'Ataşează o imagine existentă'
+'Add New Image': 'Adaugă o imagine nouă'
+Date<BR><SMALL>(yyyy-mm-dd)</SMALL>: 'Data <BR><SMALL>(aaaa-ll-zz)</SMALL>'
+'You must select an image file to upload.': 'Selectează o imagine pentru a o încărca în sistem.'
+'Change image information': 'Modifică informaţiile despre imagine'
+'You do not have the right to add images': 'Nu ai dreptul să adăugi imagini'
+'Filter by uploader...': null
+'Slideshow images': null
+'Add items to slideshow': null
+'Attached Slideshows': null
+'Value is required and can''t be empty': null
+'Select all images': null
+'Unselect all images': null

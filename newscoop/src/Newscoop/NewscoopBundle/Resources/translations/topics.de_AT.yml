@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'Wenn Sie fortfahren werden alle Themen und Unterthemen von allen Artikel entfernt und gelöscht.'
+'Delete anyway': 'Trotzdem löschen'
+'Reset order': 'Reihenfolge zurücksetzen'
+'Order changes will be lost. Are you sure you want to continue?': 'Änderungen gehen verloren. Wirklich fortsetzen?'
+'Topics order saved.': 'Themen Reihenfolge gespeichert.'
+'Show languages': 'Sprachen anzeigen'
+'Save order': 'Reihenfolge speichern'
+'Click to edit': 'Zum Bearbeiten klicken'
+'Add root topic': 'Wurzelthema hinzufügen'
+'Topic was deleted.': 'Thema wurde gelöscht.'
+'The topic name is already in use by another topic.': 'Der Themenname ist bereits in Verwendung. '
+'You must enter a name for the topic.': 'Einen Namen für das Thema eingeben. '
+'You must choose a language for the topic.': 'Für das Thema muss eine Sprache gewählt werden.'
+'This topic has subtopics, therefore it cannot be deleted.': 'Dieses Thema hat Unterthemen und kann deshalb nicht gelöscht werden.'
+'Add translation:': 'Übersetzung hinzufügen:'
+'Add subtopic:': 'Unterthema hinzufügen:'
+Top: Anfang
+'You do not have the right to add topics.': 'Keine Berechtigung Themen hinzuzufügen.'
+'You do not have the right to delete topics.': 'Keine Berechtigung Thema zu löschen.'
+'Are you sure you want to delete the topic $1?': 'Thema $1 wirklich löschen?'
+'You do not have the right to change topic name.': 'Keine Berechtigung den Themennamen zu ändern.'
+'The topic $1 could not be deleted.': 'Thema $1 konnte nicht gelöscht werden.'
+'Adding new topic': 'Neues Thema wird hinzugefügt'
+'Deleting topic': 'Thema wird gelöscht'
+'Change topic name': 'Themenname ändern'
+'There are $1 articles using the topic.': 'Thema wird von $1 Artikeln verwendet.'
+'Search for topics': null
+topics:
+    tip: null
+    label:
+        all: null
+        filterbylang: null
+        search: null
+        filterplaceholder: null
+        addroot: null
+        topicname: null
+        expandcollapse: null
+        changename: null
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: null
+    btn:
+        hide: null
+        remove: null
+        edit: null
+        close: null
+        add: null
+        save: null
+        saveandclose: null
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: null
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null

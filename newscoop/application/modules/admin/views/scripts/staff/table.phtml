@@ -1,0 +1,8 @@
+<?php 
+$translator = \Zend_Registry::get('container')->getService('translator');
+$this->headTitle($translator->trans('Staff management').' - Newscoop Admin', 'SET'); 
+?>
+
+<?php $this->renderActions(); ?>
+
+<?php $this->renderDatatable(); ?>

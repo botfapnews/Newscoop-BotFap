@@ -1,0 +1,163 @@
+'Rename user': 'Felhasználó átnevezése'
+Campsite: Campsite
+'Image Rendering': 'Kép megjelenítése'
+'Featured Article Lists': 'Kiemelt cikklisták'
+'You have tried to upload an invalid backup file.': 'Érvénytelen biztonságimásolat-fájlt próbáltál feltölteni.'
+'You do not have the right to manage backups.': 'Nincs jogod a biztonsági másolatok kezeléséhez.'
+'Make a new backup': 'Új biztonsági másolat készítése'
+'Are you sure you want to make a new backup?': 'Biztosan új biztonsági másolatot akarsz készíteni?'
+'Security token expired. Please resubmit the form.': 'A biztonsági jogkivonat lejárt. Küldd el ismét az űrlapot.'
+Templates: Sablonok
+'Create slideshow': 'Diavetítés létrehozása'
+Create: Létrehozás
+Attach/Detach: Csatolás/Leválasztás
+'Are you sure you want to delete slideshow?': 'Biztosan törölni akarod a diavetítést?'
+Support: Támogatás
+'Pending articles': 'Függőben lévő cikkek'
+'Manage Users': 'Felhasználók kezelése'
+'Manage User Types': 'Felhasználótípusok kezelése'
+'Manage User Points System': 'Felhasználói pontrendszer kezelése'
+Last: Utolsó
+First: Első
+Feedback: Visszajelzések
+'Edit your password': 'Jelszavad módosítása'
+'Edit user': 'Felhasználó szerkesztése'
+'Edit permissions': 'Engedélyek szerkesztése'
+Detail: Adat
+'Create new user': 'Új felhasználó létrehozása'
+'Create new account': 'Új fiók létrehozása'
+'Add feed': 'Hírcsatorna hozzáadása'
+'Upload of file $1 was not successful.': 'A/z $1 fájl feltöltése sikertelen volt.'
+'The file $1 could not be moved. Check you have enough of disk space.': 'Nem lehet áthelyezni a/z $1 fájlt. Ellenőrizd, hogy van-e elég hely a lemezen.'
+MiB: MiB
+'Download was not successful. Check please that the server is not out of disk space.': 'A letöltés nem sikerült. Ellenőrizd, hogy nem fogyott-e el a lemezterület a kiszolgálón.'
+'try again later': 'próbálkozz később'
+at: null
+'You must at least upload one file.': 'Legalább egy fájlt fel kell töltened.'
+'Warning: the existing data and themes will be deleted!': 'Figyelmeztetés: Törlésre fognak kerülni a meglévő adatok és témák!'
+'Value is required and cant be empty': 'Az érték kötelező és nem lehet üres'
+Upload: Feltöltés
+'Update comment': 'Hozzászólás frissítése'
+'Time created': 'Létrehozás időpontja'
+Themes: Témák
+'Stop current upload': 'A jelenlegi feltöltés leállítása'
+'Start uploading queue': 'A várólista feltöltésének indítása'
+'Start upload': 'Feltöltés indítása'
+Settings: Beállítások
+'Select files': 'Fájlok kiválasztása'
+Reply: Válasz
+'New comment added': 'Az új hozzászólás hozzáadása megtörtént'
+'Manage Authors': 'Szerzők kezelése'
+Loading..: Betöltés...
+Filename: Fájlnév
+'Edit user type': 'Felhasználótípus szerkesztése'
+'Edit language': 'Nyelv szerkesztése'
+'Drag files here.': 'Húzz ide fájlokat.'
+'Connection interrupted': 'A kapcsolat megszakadt'
+Ban: Kitiltás
+'Are you sure you want to': 'Biztosan akarod'
+'Add files to the upload queue and click the start button.': 'Adj hozzá fájlokat a feltöltési várólistához, majd kattints a Feltöltés indítása gombra.'
+'Add files': 'Fájlok hozzáadása'
+'%value% is more than %max% characters long': 'A/z %value% több %max% karakternél'
+'%value% is less than %min% characters long': 'A/z %value% kevesebb %max% karakternél'
+'User name': Felhasználónév
+Newscoop: Newscoop
+'Your password has been reset.': 'A jelszó átállítása megtörtént.'
+'Proceed to login.': 'Tovább a bejelentkezéshez.'
+'Hi, \n\nfor password recovery, please follow this link: $1': 'Hi, \n\nfor password recovery, please follow this link: $1'
+'Go to login': 'Ugrás a bejelentkezéshez'
+'Back to login.': 'Vissza a bejelentkezéshez.'
+'Back to login': 'Vissza a bejelentkezéshez'
+'An email with instructions on how to recover you password has been sent to your inbox.': 'A jelszó visszaállításával kapcsolatos utasításokat tartalmazó e-mail elküldése a postaládádba megtörtént.'
+'Session expired.': 'A munkamenet lejárt.'
+Processing...: Feldolgozás...
+Please: Kérjük
+'Go to dashboard': 'Ugrás az irányítópultra'
+'Your browser does not support Javascript or (more likely) you have Javascript disabled. Please fix this to be able to use Newscoop.': 'A böngésződ nem támogatja a JavaScriptet, vagy (valószínűbb) letiltottad a beállításokban. Javítsd ezt a Newscoop további használata céljából.'
+'Newscoop has upgraded its security measures.  In order to upgrade your account to use this increased security, you must enter your password again.': 'A Newscoop frissítette biztonsági intézkedéseit. Fiókod frissítése, a fokozott biztonság használata érdekében ismét meg kell adnod a jelszavadat.'
+'Newscoop cache was cleaned up': 'A Newscoop gyorsítótárának karbantartása megtörtént'
+Dashboard: Irányítópult
+'Your changes will be saved after login.': 'Változtatásaid bejelentkezés után kerülnek mentésre.'
+'Upload backup file': 'Biztonságimásolat-fájl feltöltése'
+'The file $1 has been uploaded successfully.': 'A/z $1 fájl feltöltése sikerült.'
+'Media Archive': Médiaarchívum
+Widgets: Widgetek
+'Widget info': 'Widget adatai'
+'Widget added to dashboard.': 'A widget elhelyezése az irányítópulton megtörtént.'
+'Remove widget': 'Widget eltávolítása'
+'Please login to continue.': 'Kérjük, jelentkezz be a folytatáshoz.'
+'Add to dashboard': 'Elhelyezés az irányítópulton'
+'Add more widgets': 'További widgetek hozzáadása'
+login: bejelentkezés
+'This link is not valid.': 'Ez a hivatkozás érvénytelen.'
+'Recover password': 'Jelszó helyreállítása'
+'Please enter your email.': 'Kérjük, add meg az e-mail címedet.'
+'Password recovery is disabled.': 'A jelszó-helyreállítás letiltott.'
+'Password recovery': Jelszó-helyreállítás
+'Password Recovery': Jelszó-helyreállítás
+'No user is registered with this email.': 'Nincs ezzel az e-mail címmel regisztrált felhasználó.'
+'Forgot your password?': 'Elfelejtetted a jelszavadat?'
+'Email: incorrect format.': 'E-mail: helytelen formátum.'
+Email: E-mail
+'Bad input parameters.': 'Rossz bemeneti paraméterek.'
+'There was an error trying to delete the file $1.': 'Hiba történt a/z $1 fájl törlésének megkísérlésekor.'
+'The file $1 was deleted successfully.': 'A/z $1 fájl törlése sikerült.'
+Size: Méret
+'Restore file': 'Fájl visszaállítása'
+Restore: Visszaállítás
+Mb: Mb
+'Free disk space': 'Szabad lemezterület'
+'Download file': 'Fájl letöltése'
+Download: Letöltés
+'Delete file': 'Fájl törlése'
+'Backup list is empty.': 'A biztonságimásolat-lista üres.'
+'Are you sure you want to restore the file $1?': 'Biztosan vissza akarod állítani a/z $1 fájlt?'
+'Are you sure you want to delete the file $1?': 'Biztosan törölni akarod a/z $1 fájlt?'
+'Import XML': 'XML importálása'
+'You must have the permissions to add/change issues and articles in order to set the author for all articles.': 'A szerző összes cikkhez való megadása céljából a számok és cikkek hozzáadásához/módosításához szükséges engedélyekkel kell rendelkezned.'
+'Select the field from which to generate the author': 'Válaszd ki azt a mezőt, melyből létre kell hozni a szerzőt'
+'Invalid or empty field $1. You must select a valid dynamic field.': 'Érvénytelen vagy üres $1 mező. Egy dinamikus mezőt kell kiválasztanod.'
+'Unable to create author $1 for article no. $2 ($3) of type $4.': 'Nem sikerült $4 típusú $1 szerzőt $2 ($3) cikkszámmal létrehozni.'
+'There were errors setting the author for articles of type $1 from the field $2.': 'Hibák léptek fel a/z $1 típusú cikkek szerzőjének beállítása során a/z $2 mezőből.  '
+'The author was set successfuly for articles of type $1 from the field $2.': 'Sikerült megadni a szerzőt a/z $1 típusú cikkekhez a/z $2 mezőből.'
+'The article has been locked by $1 ($2) $3 minute(s) ago.': 'A cikket $1 ($2) zárolta $3 perce.'
+'The article has been locked by $1 ($2) $3 hour(s) and $4 minute(s) ago.': 'A cikket $1 ($2) zárolta $3 órája és $4 perce.'
+'Error setting the author $1 for article no. $2 ($3) of type $4.': 'Hiba történt a/z $1 nevű szerző megadásakor a/z $2 ($3) sz. $4 típusú cikkhez.'
+'Clear system cache': 'Rendszergyorsítótár törlése'
+'The system was unable to upload the file $1. ': 'A rendszer nem tudta feltölteni a/z $1 fájlt.'
+'Please check the file you are trying to upload, it might be corrupted.': 'Ellenőrizd a feltölteni kívánt fájlt, mert lehet, hogy sérült.'
+'An error occurred in session management. Please reload the login page.': null
+'This file is stored on disk as $1.': 'Ez a fájl $1 néven lemezen kerül tárolásra.'
+'The system is unable to write to the directory $1.': 'A rendszer nem tud írni a/z $1 könyvtárba.'
+'The system was unable to read the file $1.': 'A rendszer nem tudta olvasni a/z $1 fájlt.'
+'The system was unable to delete the directory $1.': 'A rendszer nem tudta törölni a/z $1 könyvtárt.'
+'Please check if the user $1 has permission to read this file.': 'Ellenőrizd, hogy a/z $1 nevű felhasználó számára engedélyezett-e ennek a fájlnak az olvasása.'
+'Please check if the directory is empty and the user $1 has permission to write to the directory $2.': 'Ellenőrizd, hogy üres-e a könyvtár, és a/z $1 nevű felhasználónak van--e írási engedélye a/z $2 könyvtárhoz'
+'The system was unable to write to the file $1.': 'A rendszer nem tudott írni a/z $1 fájlba.'
+'The system was unable to delete the file $1.': 'A rendszer nem tudta törölni a/z $1 fájlt.'
+'The system was unable to create the file $1.': 'A rendszer nem tudta létrehozni a/z $1 fájlt.'
+'The system was unable to create the directory $1.': 'A rendszer nem tudta létrehozni a/z $1 könyvtárat.'
+'Please check if the user $1 has permission to write to this file.': 'Ellenőrizd, hogy a/z $1 nevű felhasználónak van-e írási engedélye ehhez a fájlhoz.'
+'Please check if the user $1 has permission to write to the directory $2.': 'Ellenőrizd, hogy a/z $1 nevű felhasználónak van-e írási engedélye a/z $2 könyvtárhoz.'
+'Type the code shown above:': 'Írd be a fent látható kódot:'
+'Please enter your user name.': 'Add meg a felhasználónevedet.'
+'Please enter your password.': 'Add meg a jelszavadat.'
+'Please enter the code shown in the image.': 'Írd be a képen látható kódot.'
+'CAPTCHA code is not valid.  Please try again.': 'A CAPTCHA-kód nem érvényes. Kérjük, próbáld újra.'
+'Signed in: $1': 'Bejelentkezve: $1'
+Help: Súgó
+'Please enter your user name and password': 'Add meg a felhasználónevedet és a jelszavadat'
+'You do not have the right to access this page.': 'Nincs jogod ennek az oldalnak az eléréséhez.'
+'Login failed': 'A bejelentkezés sikertelen'
+'Please make sure that you typed the correct user name and password.': 'Ellenőrizd, hogy helyesen adtad-e meg a felhasználónevedet és a jelszavadat.'
+'If your problem persists please contact the site administrator $1': 'Ha a probléma továbbra is fennáll, kérjük, fordulj a webhely $1 rendszergazdájához'
+Backup/Restore: 'Biztonsági mentés/Visszaállítás'
+'Step 2': '2. lépés'
+'Step 3': '3. lépés'
+'Add new user': 'Új felhasználó hozzáadása'
+'Bad credentials': 'Rossz hitelesítő adatok'
+'Active users': 'Aktív felhasználók'
+'New comments': 'Új hozzászólások'
+'Published articles': 'Közzétett cikkek'
+'Last 7 days statistics': 'Utolsó 7 nap statisztikája'
+'Change password': 'Jelszó megváltoztatása'

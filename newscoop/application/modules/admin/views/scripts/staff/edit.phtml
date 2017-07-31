@@ -1,0 +1,7 @@
+<?php 
+$translator = \Zend_Registry::get('container')->getService('translator');
+$this->headTitle($translator->trans('Change user account information').' - Newscoop Admin', 'SET'); ?>
+
+<?php $this->renderActions(); ?>
+
+<?php echo $this->form; ?>

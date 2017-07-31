@@ -1,0 +1,78 @@
+'Display newsfeed images': 'Отобразить изображения ленты новостей'
+'Mark image': 'Отметить изображение'
+'Add selected images to slideshow': 'Добавить выбранные изображения в слайдшоу'
+'Sorry that image is too small. Image needs to be at least %dx%d.': 'К сожалению, это изображение слишком мало. Размер изображений должен быть по меньшей мере %dx%d.'
+'Slideshow rendition': 'Размеры изображений в слайд-шоу'
+'Renditions reloaded': 'Размеры  перезагружены'
+'Reload renditions': 'Перезагрузить размеры'
+'Edit images': 'Редактировать изображения'
+'Specify image url if you want to load it.': 'Укажите url изображения, если хотите загрузить его.'
+'Items: ': 'Пункты:'
+'Attach slideshows': 'Прикрепить слайд-шоу'
+'original size:': 'оригинальный размер:'
+'no caption': 'без подписи'
+'Video URL': 'URL видео '
+'Use for all': 'Использовать для всех'
+'Use default': 'Использовать по умолчанию'
+'Slug must be unique': 'Краткое имя должно быть уникальным'
+Slug: 'Краткое имя'
+'Slideshow headline': 'Заголовок слайд-шоу'
+Slideshow: Слайд-шоу
+'Set selected as default image': 'Назначить выбранное изображением по умолчанию'
+'Set as default': 'Установить как значение по умолчанию'
+Saving...: Сохраняется...
+Saved: Сохранено
+'Save headline': 'Сохранить заголовок'
+'Place Images': 'Разместить изображения'
+'No renditions defined.': 'Размеры не определены. '
+'No images found.': 'Изображений не найдено.'
+'No images attached to article.': 'К статье не прикреплены изображения.'
+'No images': 'Нет изображений'
+'Next: Upload and Edit Metadata': 'Далее: Загрузить и редактировать мета-данные'
+'Next: Place Images': 'Далее: разместить изображения.'
+'Media Archive': Медиа-архив
+Location: Место
+Items: Пункты
+Item: Пункт
+'Image files': 'Файлы изображений'
+'Image Files: ': 'Файл изображений:'
+Headline: Заголовок
+Finish: Завершить
+'Edit Image Data': 'Редактировать данные изображения'
+'Edit $1': 'Редактировать $1'
+'Done editing': 'Закончить редактирование'
+Detach: Отсоединить
+Create: Создать
+Caption: Подпись
+'Attached images': 'Прикрепленные изображения'
+'Attach & Place': 'Прикрепить и разместить'
+'Add video url (e.g. http://vimeo.com/25083275 for Vimeo, http://youtu.be/1XsPVO61e9w for YouTube)': 'Добавить url видео (например, http://vimeo.com/25083275 для Vimeo, http://youtu.be/1XsPVO61e9w для YouTube)'
+'Add video': 'Добавить видео'
+'Add caption': 'Добавить подпись'
+'Show all': 'Показать все'
+'The image has been removed from the article.': 'Это изображение было удалено из статьи.'
+'Unable to add new image.': 'Невозможно добавление нового изображения.'
+'Image number $1 already exists': 'Изображение с номером $1  уже существует.'
+'You do not have the right to change image information.': 'Вы не имеете права изменять информацию об изображении.'
+'The image number specified is already in use.': 'Указанный номер изображения уже используется.'
+'Image $1 updated.': 'Изображение $1 обновлено.'
+'Image $1 added.': 'Изображение $1 добавлено.'
+'Edit article': 'Редактировать статью'
+'You do not have the right to attach images to articles.': 'Вы не имеете прав доступа для добавления изображения к статье.'
+'You do not have the right to add images.': 'Вы не имеете прав доступа для добавления изображений.'
+'Image information': 'Информация об изображении.'
+'Attach New Image': 'Добавить новое изображение'
+'Attach Image To Article': 'Добавить изображение к статье'
+'Attach Existing Image': 'Добавить существующее изображение'
+'Add New Image': 'Добавить новое изображение'
+Date<BR><SMALL>(yyyy-mm-dd)</SMALL>: Дата<BR><SMALL>(гггг-мм-дд)</SMALL>
+'You must select an image file to upload.': 'Вы должны выбрать графический файл для загрузки.'
+'Change image information': 'Измениить информацию об изображении'
+'You do not have the right to add images': 'Вы не имеете прав доступа к добавлению изображения'
+'Filter by uploader...': 'Фильтр по загрузке...'
+'Slideshow images': 'Изображения в слайд-шоу'
+'Add items to slideshow': 'Добавить в слайд-шоу'
+'Attached Slideshows': 'Прикрепленные слайд-шоу'
+'Value is required and can''t be empty': 'Поле значения нельзя оставить пустым'
+'Select all images': null
+'Unselect all images': null

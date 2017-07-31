@@ -1,0 +1,5 @@
+<h1><?php $translator = \Zend_Registry::get('container')->getService('translator'); echo $translator->trans('Login'); ?></h1>
+
+<?php $this->renderError(); ?>
+
+<?php echo $this->form->setAction('')->render(); ?>

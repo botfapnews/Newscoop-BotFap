@@ -1,0 +1,9 @@
+dynatable:
+    page: Страна
+    perPageText: 'Прикажи:'
+    pageText: 'Стране:'
+    recordCountPageBoundTemplate: null
+    recordCountPageUnboundedTemplate: null
+    recordCountFilteredTemplate: null
+    recordCountText: Приказивање
+    processingText: Обрађујем...

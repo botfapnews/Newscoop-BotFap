@@ -1,0 +1,85 @@
+NewscoopGimmeBundleArticles:
+    resource: "@NewscoopGimmeBundle/Controller/ArticlesController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleAuthors:
+    resource: "@NewscoopGimmeBundle/Controller/AuthorsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleComments:
+    resource: "@NewscoopGimmeBundle/Controller/CommentsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleSlideshows:
+    resource: "@NewscoopGimmeBundle/Controller/SlideshowsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleTopics:
+    resource: "@NewscoopGimmeBundle/Controller/TopicsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleUsers:
+    resource: "@NewscoopGimmeBundle/Controller/UsersController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleSections:
+    resource: "@NewscoopGimmeBundle/Controller/SectionsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleArticlesList:
+    resource: "@NewscoopGimmeBundle/Controller/ArticlesListController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleArticleTypes:
+    resource: "@NewscoopGimmeBundle/Controller/ArticleTypesController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleImages:
+    resource: "@NewscoopGimmeBundle/Controller/ImagesController.php"
+    prefix:   /
+    type:     annotation
+
+
+NewscoopGimmeBundleAttachments:
+    resource: "@NewscoopGimmeBundle/Controller/AttachmentsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleSnippets:
+    resource: "@NewscoopGimmeBundle/Controller/SnippetsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleSnippetTemplates:
+    resource: "@NewscoopGimmeBundle/Controller/SnippetTemplatesController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopEditorialCommentsApiController:
+    resource: "@NewscoopGimmeBundle/Controller/EditorialCommentsApiController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopPublicationController:
+    resource: "@NewscoopGimmeBundle/Controller/PublicationsController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopIssuesController:
+    resource: "@NewscoopGimmeBundle/Controller/IssuesController.php"
+    prefix:   /
+    type:     annotation
+
+NewscoopGimmeBundleUserTopics:
+    resource: "@NewscoopGimmeBundle/Controller/UserTopicsController.php"
+    prefix:   /
+    type:     annotation

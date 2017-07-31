@@ -1,0 +1,66 @@
+comments:
+    label:
+        comments: 'Zarządzanie komentarzami'
+        menu: Komentarze
+        banned: Zablokowany
+        anonymous: Anonim
+        at: w
+        noentries: 'Nie znaleziono wyników.'
+        showing: Pokazuje
+        of: z
+        to: do
+        entries: wyników
+        fullarticle: 'Pełny artykuł'
+        hidden: Ukryte
+        approved: Zaakceptowane
+        new: Nowy
+        editarticle: 'Przejdź do edycji artykulu'
+        section: Sekcja
+        comment: Komentarz
+        replyto: 'Odpowiedz na komentarz'
+        subject: Temat
+        ban: 'Zablokuj/Odblokuj użytkownika'
+        author: Autor
+        date: 'Data / Komentarz'
+        article: Artykuł
+        search: Szukaj
+        show: Pokaż
+        recommended: Polecany
+        unrecommended: Niepolecany
+        editcomment: 'Szybka edycja'
+        actions: Akcje
+        selectstatus: 'Wybierz status'
+        deleted: Usunięty
+        alert: Uwaga
+        searchholder: 'Szukaj... (np. imię, email, temat, treść komentarza, tytuł artykułu)'
+    btn:
+        cancel: Anuluj
+        submit: Wyślij
+        unrecommend: 'Niepolecany '
+        recommend: Poleć
+        delete: Usuń
+        reply: Odpowiedz
+        edit: 'Szybka edycja'
+        close: Zamknij
+        okay: Ok
+        filter: Filtrowanie
+    msg:
+        deleted: 'Komentarz został usunięty'
+        commentinarticle: 'Komentarz $4 przez $1 w artykule $2 ($3)'
+        status:
+            new: nowy
+            approved: zatwierdzony
+            hidden: ukryty
+            single: 'Status komentarza został zmieniony na'
+            all: 'Status komentarzy został zmieniony na'
+        error:
+            reach: 'Nie można połączyć z Newscoop. Sprawdź swoje połączenie z Internetem.'
+            deletefromarticle: 'Komentarz został usunięty z artykułu $2 przez $1 ($3)'
+            statuschange: 'Wystąpił błąd podczas zmieniania statusu dla kometarza'
+            delete: 'Nie można usunąć tego komentarza'
+            update: 'Pola nie mogą być puste'
+        sure: 'Chcesz bezpowrotnie usunąć wiadomość'
+        suremultiple: 'Zamierzasz bezpowrotnie usunąć wybrane komentarze.'
+        first: 'Musisz najpierw wybrać komentarz/komentarze!'
+        surequestion: 'Jesteś pewien że chcesz to zrobić?'
+        updated: 'Komentarz zaktualizowany.'

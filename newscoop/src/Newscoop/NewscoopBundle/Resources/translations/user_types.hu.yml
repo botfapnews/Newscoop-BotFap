@@ -1,0 +1,81 @@
+get: kap
+Soundcloud: SoundCloud
+Templates: Sablonok
+'Feedback Messages': 'Visszajelző üzenetek'
+'Article Playlists': 'Cikk lejátszási listák'
+'Check all': 'Az összes bejelölése'
+view: megtekintés
+undo/redo: visszavonás/ismét
+underline: aláhúzás
+translate: fordítás
+'text direction': szövegirány
+'text alignment': 'szöveg igazítása'
+table: táblázat
+superscript: 'felső index'
+subscript: 'alsó index'
+subhead: alcím
+strikethrough: áthúzás
+statusbar: állapotsor
+'spell checker enabled': 'helyesírás-ellenőrző engedélyezve'
+'source view': 'forrás megtekintése'
+publish: közzétesz
+notify: értesít
+moderate: moderál
+manage: kezel
+'list number': listaszám
+'list bullet': 'lista felsorolásjel'
+link: hivatkozás
+italic: dőlt
+indent: behúzás
+image: kép
+'horizontal rule': 'vízszintes vonal'
+handle: kezel
+guest: vendég
+'font size': betűméret
+'font face': betűtípus
+'font color': betűszín
+find/replace: keresés/csere
+enlarge: nagyít
+enable: engedélyez
+edit: szerkeszt
+delete: töröl
+copy/cut/paste: másolás/kivágás/beillesztés
+clear: tisztít
+'character map': karaktertábla
+bold: félkövér
+attach: csatol
+'any resource': 'bármely erőforrás'
+admin: adminisztrátor
+add: hozzáad
+'You cant deny yourself to manage $1': 'Nem tagadhatod meg magadtól a/z $1 kezelését'
+'You are not allowed to $1 $2.': 'A/z $1 $2 nem engedélyezett a számodra.'
+'User type saved.': 'A felhasználótípus mentése megtörtént.'
+'User type deleted.': 'A felhasználótípus törlése megtörtént.'
+'User type added.': 'A felhasználótípus hozzáadása megtörtént.'
+'User Groups': Felhasználócsoportok
+Themes: Témák
+'That type name already exists, please choose a different name.': 'Ez a típusnév már létezik, válassz másik nevet.'
+System: Rendszer
+Structure: Szerkezet
+'Search Indexer': 'Keresési indexelő szolgáltatás'
+'Rich-Text Editor Preferences': 'Rich Text szerkesztő beállításai'
+ReCaptcha: reCAPTCHA
+Polls: Szavazások
+'Permissions:': 'Engedélyek:'
+'Permissions updated': 'Az engedélyek frissítése megtörtént'
+Notification: Értesítés
+Log: Napló
+Layout: Elrendezés
+Global: Globális
+Files: Fájlok
+'Error: ': 'Hiba:'
+'Edit user type $1': 'A/z $1 felhasználótípus szerkesztése'
+Deny: Megtagadás
+'Delete user type $1': 'A/z $1 felhasználótípus törlése'
+'Can not delete a user type with assigned users.': 'Nem lehet törölni hozzárendelt felhasználókat tartalmazó felhasználótípust.'
+Cache: Gyorsítótár
+Backup: 'Biztonsági mentés'
+Authoring: Szerkesztés
+Allow: Engedélyezés
+'User types': Felhasználótípusok
+'No user types.': 'Nincsenek felhasználótípusok.'

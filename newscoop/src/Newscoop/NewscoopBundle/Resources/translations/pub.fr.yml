@@ -1,0 +1,140 @@
+'Make sure to enter the Moderator Address below': null
+'click to see issues': null
+'Moderator Address': null
+'From Address': null
+'Use CAPTCHA to prevent spam?': null
+'Public allowed to comment?': null
+'Enable spam blocking?': null
+'The subscription settings for $1 could not be added.': null
+'The publication name you specified conflicts with publication $1.': null
+'The publication alias you specified conflicts with publication $1.': null
+'Subscription defaults': null
+'Subscription Settings by Country': null
+'Set subscription settings for a country': null
+'Set subscription settings by country': null
+'Default time periods:': null
+'Country subscription settings updated.': null
+'Country subscription settings deleted.': null
+'Change country subscription settings': null
+'Are you sure you want to delete the subscription settings for $1?': null
+'Publication updated': null
+'Subscriber comments moderated?': null
+'Public comments moderated?': null
+'Comments enabled?': null
+'Comments enabled': null
+'Article comments default to enabled?': null
+'trial subscription': 'Abonnement dessai'
+'paid subscription': 'Abonnement payé'
+'time units': 'Unités temps'
+'one language': 'Une langue'
+'all languages': 'Toutes les langues'
+'Trial subscriptions': 'Abonnements dessai'
+'Time unit cost per one section': 'Coût unitaire  de temps par section'
+'Paid subscriptions': 'Abonnements payés'
+'Default time period': 'Periode par défaut'
+'Go To Issues': 'Aller aux éditions'
+'Delete publication $1': 'Supprimer la publication $1'
+'No publications.': 'Aucune publication.'
+'Default Site Alias': 'Alias par défaut du site'
+'URL Type': 'Type dURL'
+'Country<BR><SMALL>(click to edit)</SMALL>': 'Pays<BR><SMALL>(cliquer pour éditer)</SMALL>'
+'Delete alias $1': 'Supprimer alias $1'
+'Configure publication': 'Configurer publication'
+'You do not have the right to edit publication information.': 'Vous navez pas le droit déditer linformation de publication.                    '
+'General attributes': 'Attributs Généraux'
+'You do not have the right to change publication information.': 'Vous navez pas le droit de changer linformation de publication. '
+'The publication information could not be updated.': 'linformation de publication ne pouvait pas être mise à jour. '
+'You do not have the right to delete publications.': 'Vous navez pas le droit de supprimer des publications'
+'Are you sure you want to delete the publication $1?': 'Etes-vous sûr de vouloir supprimer la publication $1?'
+'Deleting publication': 'Suppression publication'
+'There are $1 subscription(s) left.': 'Il manque un ou des abonnement(s).'
+'The publication $1 could not be deleted.': 'La publication $1 ne pouvait pas être supprimée.'
+'The publication could not be added.': 'La publication ne pouvait pas être ajoutée.'
+'You do not have the right to manage publications.': 'Vous navez pas le droit de gérer des publications'
+'You must select a country.': 'Vous devez choisir un pays'
+'Add new alias': 'Ajouter un nouvel alias'
+'Alias (click to edit)': 'Alias (cliquer pour éditer)'
+'Edit aliases': 'Editer alias'
+'Publication Aliases': 'Publication Alias'
+'Adding new alias': 'Ajout nouvel alias'
+'The site alias $1 could not be added.': 'Lalias du site $1 ne pouvait pas être ajouté.'
+'Another alias with the same name exists already.': 'Un autre alias avec le même nom existe déjà.'
+'Edit alias': 'Editer alias'
+'Editing alias': 'Edition alias'
+'The site alias $1 could not be modified.': 'Lalias du site $1 ne pouvait pas être modifié.'
+'Are you sure you want to delete the alias $1?': 'Etes-vous sûre de vouloir supprimer lalias $1?'
+'Deleting alias': 'Suppression alias'
+'The alias $1 could not be deleted.': 'Lalias $1 ne pouvait pas être supprimé.'
+'$1 is the default publication alias, it can not be deleted.': '$1 est lalias de publication par défaut, il ne peut pas être supprimé.'
+'You do not have the right to add publications.': 'Vous navez pas le droit dajouter des publications.'
+'There are $1 issue(s) left.': 'Il manque $1 édition(s).'
+'Time Unit': 'Unité de Temps'
+Currency: Monnaie
+'Edit languages': 'Editer langues'
+'Search engine optimization': null
+'Article title': null
+'Article keywords': null
+'Article topics': null
+publications:
+    title:
+        list: null
+        edit: null
+        add: null
+        remove: null
+    no_publications: null
+    general_settings: null
+    comments_settings: null
+    seo_settings: null
+    front_page_theme_settings: null
+    publication_removed: null
+    publication_saved: null
+    remove:
+        cant_be_removed: null
+        can_be_removed: null
+        left_issues: null
+        left_sections: null
+        left_articles: null
+        show_issues: null
+        before_removing: null
+        you_sure: null
+        remove: null
+    buttons:
+        addNew: null
+        listPublications: null
+        listIssues: null
+    table:
+        number: null
+        name: null
+        default_alias: null
+        default_language: null
+        comments_status: null
+        url_type: null
+        configure: null
+        remove: null
+    form_type:
+        label:
+            follow_current_issue_theme: null
+            name: null
+            template_path: null
+            short_names: null
+            alias: null
+            url_type: null
+            seo: null
+            seo_article_title: null
+            seo_article_keywords: null
+            seo_article_topics: null
+            edit_aliases: null
+            edit_languages: null
+            moderator_to: null
+            moderator_from: null
+            comments_enabled: null
+            public_comments_enabled: null
+            comments_article_default_enabled: null
+            comments_subscribers_moderated: null
+            comments_public_moderated: null
+            comments_captcha_enabled: null
+            comments_spam_blocking_enabled: null
+            meta_title: null
+            meta_keywords: null
+            meta_description: null
+    tip1: null

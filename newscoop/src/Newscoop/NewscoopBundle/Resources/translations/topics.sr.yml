@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'Уколико наставите, топик и сви под-топици ће бити уклоњени из свих текстова, и обрисани.'
+'Delete anyway': 'Свеједно, обриши'
+'Reset order': 'Поништи редослед'
+'Order changes will be lost. Are you sure you want to continue?': 'Измене редоследа ће бити поништене. Да ли сте сигурни да желите да наставите?'
+'Topics order saved.': 'Редослед топика је сниmљен.'
+'Show languages': 'Прикажи језике'
+'Save order': 'Сними редослед'
+'Click to edit': 'Клик за уређивање'
+'Add root topic': 'Додај матични топик'
+'Topic was deleted.': 'Топик је обрисан'
+'The topic name is already in use by another topic.': 'Име за топик је већ у употреби'
+'You must enter a name for the topic.': 'Морате унети име топика.'
+'You must choose a language for the topic.': 'Морате изабрати језик топика'
+'This topic has subtopics, therefore it cannot be deleted.': 'Овај топик има под-топике, па не може бити обрисан.'
+'Add translation:': 'додај превод:'
+'Add subtopic:': 'Додај под-топик:'
+Top: Врх
+'You do not have the right to add topics.': 'Немате право да додајете топике'
+'You do not have the right to delete topics.': 'Немате право да бришете топике'
+'Are you sure you want to delete the topic $1?': 'Да ли сте сигурни да желите да обришете топик $1? '
+'You do not have the right to change topic name.': 'Немате право да мењате име топика'
+'The topic $1 could not be deleted.': 'Топик $1 не може бити обрисан'
+'Adding new topic': 'Додавање новог топика'
+'Deleting topic': 'Брисање топика'
+'Change topic name': 'Промени име топика'
+'There are $1 articles using the topic.': 'Преостало је $1 текстова који користе овај топик'
+'Search for topics': null
+topics:
+    tip: null
+    label:
+        all: Све
+        filterbylang: null
+        search: Тражи
+        filterplaceholder: null
+        addroot: 'Додај матични топик'
+        topicname: null
+        expandcollapse: null
+        changename: 'Промени име топика'
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: Топици
+    btn:
+        hide: Сакри
+        remove: null
+        edit: null
+        close: Затвори
+        add: Додај
+        save: Сними
+        saveandclose: 'Сними и затвори'
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: 'Успешно сачувано.'
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null

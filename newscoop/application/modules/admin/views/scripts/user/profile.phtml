@@ -1,0 +1,14 @@
+<?php
+$translator = \Zend_Registry::get('container')->getService('translator');
+echo $this->form; 
+?>
+
+<?php if (!empty($this->close)) { ?>
+<script>
+<?php if (!empty($this->image)) { ?>
+parent.$('.edit-image img').attr('src', <?php echo json_encode($this->image); ?>);
+<?php } ?>
+parent.$.fancybox.close();
+parent.flashMessage(<?php echo json_encode($translator->trans("Profile saved.", array(), 'users')); ?>);
+</script>
+<?php } ?>

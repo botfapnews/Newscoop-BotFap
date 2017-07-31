@@ -1,0 +1,78 @@
+'Display newsfeed images': null
+'Mark image': 'Обележи слику'
+'Add selected images to slideshow': 'Изабрану слику додај у галерију'
+'Sorry that image is too small. Image needs to be at least %dx%d.': 'Слика није довољно велика, потребно је да буде бар %dx%d.'
+'Slideshow rendition': null
+'Renditions reloaded': null
+'Reload renditions': null
+'Edit images': 'Уреди слике'
+'Specify image url if you want to load it.': 'Одредите УРЛ слике ако желите да је учитате.'
+'Items: ': null
+'Attach slideshows': 'Додај галерију слика'
+'original size:': 'Оригинална величина'
+'no caption': 'Слика је без потписа'
+'Video URL': 'Видео урл'
+'Use for all': 'Користи за све.'
+'Use default': 'Дифолтно подешавање'
+'Slug must be unique': null
+Slug: null
+'Slideshow headline': 'Наслов галерије слика'
+Slideshow: 'Галерија слика'
+'Set selected as default image': 'Подеси изабрану слику као дифолтну'
+'Set as default': 'Подеси као дифолтно'
+Saving...: Снимам...
+Saved: Сачувано
+'Save headline': 'Сачувај наслов'
+'Place Images': 'Додај слике'
+'No renditions defined.': null
+'No images found.': 'Слике нису нађене.'
+'No images attached to article.': 'Уз чланак нису додате слике.'
+'No images': 'Нема слика'
+'Next: Upload and Edit Metadata': 'Учитај и измени мета-податке'
+'Next: Place Images': 'Следећи корак: Постави слику'
+'Media Archive': 'Архива медијских записа'
+Location: Локација
+Items: null
+Item: null
+'Image files': Слике
+'Image Files: ': 'Слике:'
+Headline: Наслов
+Finish: Заврши
+'Edit Image Data': 'Уреди податке о слици'
+'Edit $1': 'Уреди $1'
+'Done editing': 'Заврши уређивање'
+Detach: Избаци
+Create: Креирај
+Caption: Потпис
+'Attached images': 'Прикачи слике'
+'Attach & Place': 'Прикачи и позиционирај слике'
+'Add video url (e.g. http://vimeo.com/25083275 for Vimeo, http://youtu.be/1XsPVO61e9w for YouTube)': 'Додај видео (пример формата: http://vimeo.com/25083275 for Vimeo, http://youtu.be/1XsPVO61e9w for YouTube)'
+'Add video': 'Додај видео'
+'Add caption': 'Додај потпис'
+'Show all': 'Прикажи све'
+'The image has been removed from the article.': 'Слика је уклоњена из текста'
+'Unable to add new image.': 'Није могуће додати нову слику.'
+'Image number $1 already exists': 'Слика број $1 већ постоји'
+'You do not have the right to change image information.': 'Немате право мењања података о сликама.'
+'The image number specified is already in use.': 'Број слике који сте унели је већ у употреби.'
+'Image $1 updated.': 'Слика $1 је измењена.'
+'Image $1 added.': 'Слика $1 је додата.'
+'Edit article': 'Уреди текст'
+'You do not have the right to attach images to articles.': 'Немате право да качите слике уз текстове.'
+'You do not have the right to add images.': 'Немате право да додајете слике.'
+'Image information': 'Подаци о слици'
+'Attach New Image': 'Прикачи нову слику'
+'Attach Image To Article': 'Прикачи слику уз текст'
+'Attach Existing Image': 'Прикачи постојећу слику'
+'Add New Image': 'Додај нову слику'
+Date<BR><SMALL>(yyyy-mm-dd)</SMALL>: Датум<br><small>(гггг-мм-дд)</small>
+'You must select an image file to upload.': 'Морате изабрати слику коју желите да аплоудујете.'
+'Change image information': 'Промени податке о слици'
+'You do not have the right to add images': 'Немате право да додајете слике'
+'Filter by uploader...': 'Филтрирај по...'
+'Slideshow images': 'Прикажи слике из галерије'
+'Add items to slideshow': 'Додај слику у галерију'
+'Attached Slideshows': 'Прикачене галерије слика'
+'Value is required and can''t be empty': 'Вредност је обавезна, поље не може бити празно'
+'Select all images': 'Изабери све слике'
+'Unselect all images': 'Одселектуј све слике'

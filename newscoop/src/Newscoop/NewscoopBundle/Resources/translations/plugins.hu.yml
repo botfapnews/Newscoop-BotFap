@@ -1,0 +1,14 @@
+'You have no installed plugins.': 'Nem telepítettél bővítményeket.'
+'Some plugins have to be updated. Please press the save button.': 'Néhány bővítményt frissíteni kell. Nyomd meg a Mentés gombot.'
+'Please confirm the plugin $1 uninstall. All plugin data will be deleted!': 'Erősítsd meg a/z $1 bővítmény eltávolítását. Törlésre fog kerülni a bővítmény összes adata!'
+'You do not have the right to manage plugins.': 'Nincs jogod a bővítmények kezeléséhez.'
+Version: Verzió
+'Upload Plugin': 'Bővítmény feltöltése'
+Upload: Feltöltés
+Uninstall: Eltávolítás
+'The plugin $1 was sucessfully installed.': 'A/z $1 bővítmény telepítése sikerült.'
+'No plugins found.': 'Nem találhatók bővítmények.'
+Manage: Kezelés
+Enabled: Engedélyezve
+'Delete plugin': 'Bővítmény törlése'
+'Add new image': 'Új kép hozzáadása'

@@ -1,0 +1,78 @@
+'Display newsfeed images': null
+'Mark image': null
+'Add selected images to slideshow': null
+'Sorry that image is too small. Image needs to be at least %dx%d.': null
+'Slideshow rendition': null
+'Renditions reloaded': null
+'Reload renditions': null
+'Edit images': null
+'Specify image url if you want to load it.': null
+'Items: ': null
+'Attach slideshows': null
+'original size:': null
+'no caption': null
+'Video URL': null
+'Use for all': null
+'Use default': null
+'Slug must be unique': null
+Slug: null
+'Slideshow headline': null
+Slideshow: null
+'Set selected as default image': null
+'Set as default': null
+Saving...: null
+Saved: null
+'Save headline': null
+'Place Images': null
+'No renditions defined.': null
+'No images found.': null
+'No images attached to article.': null
+'No images': null
+'Next: Upload and Edit Metadata': null
+'Next: Place Images': null
+'Media Archive': null
+Location: null
+Items: null
+Item: null
+'Image files': 图像文件
+'Image Files: ': 图像文件：
+Headline: 头条
+Finish: 完成
+'Edit Image Data': 编辑图像数据
+'Edit $1': '编辑 $1'
+'Done editing': 编辑完成
+Detach: 拆分
+Create: 创建
+Caption: 标题
+'Attached images': 附加图片
+'Attach & Place': 连接和放置
+'Add video url (e.g. http://vimeo.com/25083275 for Vimeo, http://youtu.be/1XsPVO61e9w for YouTube)': '添加视频网址 (例如，Vimeo网站的http://vimeo.com/25083275, YouTube 网站的http://youtu.be/1XsPVO61e9w) '
+'Add video': '添加视频 '
+'Add caption': 添加标题
+'Show all': 显示所有
+'The image has been removed from the article.': 图像已经从文章中移除。
+'Unable to add new image.': 无法添加新图片。
+'Image number $1 already exists': '图像编号$1 已经存在'
+'You do not have the right to change image information.': 您没有权限更改图像信息。
+'The image number specified is already in use.': 指定图像编号已在使用中。
+'Image $1 updated.': '图像 $1 已更新。'
+'Image $1 added.': '图像 $1 已添加'
+'Edit article': 编辑文章
+'You do not have the right to attach images to articles.': 您没有权限将图像附加到文章中。
+'You do not have the right to add images.': 您没有权限添加图片。
+'Image information': 图像信息
+'Attach New Image': 附加新的图片
+'Attach Image To Article': 将图像附加到文章
+'Attach Existing Image': 附加已经存在的图像
+'Add New Image': 添加新图片
+Date<BR><SMALL>(yyyy-mm-dd)</SMALL>: 日期(yyyy-mm-dd)
+'You must select an image file to upload.': null
+'Change image information': 修改图片信息
+'You do not have the right to add images': 您无权限增加图片
+'Filter by uploader...': null
+'Slideshow images': null
+'Add items to slideshow': null
+'Attached Slideshows': null
+'Value is required and can''t be empty': null
+'Select all images': null
+'Unselect all images': null

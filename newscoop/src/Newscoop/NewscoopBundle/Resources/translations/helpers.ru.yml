@@ -1,0 +1,9 @@
+dynatable:
+    page: страница
+    perPageText: 'Показать: '
+    pageText: 'Страницы: '
+    recordCountPageBoundTemplate: '{pageLowerBound} to {pageUpperBound} of'
+    recordCountPageUnboundedTemplate: '{recordsShown} of'
+    recordCountFilteredTemplate: ' (filtered from {recordsTotal} total records)'
+    recordCountText: Показано
+    processingText: Обработка...

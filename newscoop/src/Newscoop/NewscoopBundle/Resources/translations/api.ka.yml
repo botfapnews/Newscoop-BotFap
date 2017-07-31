@@ -1,0 +1,108 @@
+'No such article type': 'ასეთი სტატიის ტიპი არ არსებობს'
+'Multi-line Text': 'მრავალხაზიანი ტექსტი'
+'Filter saved': 'ფილტრი დამახსოვრებულია'
+'Filter not saved': 'ფილტრი არ არის დამახსოვრებული'
+'Not a color': 'ეს ფერი არ არის'
+'No such field': 'ასეთი ველი არ არსებობს'
+'Color saved': 'ფერი დამახსოვრებულია'
+'Color not saved': 'ფერი არ არის დამახსოვრებული'
+'Topic created': 'თემა შექმნილია'
+'The topic name is already in use by another topic.': 'თემის სათაური უკვე გამოყენებულია სხვა თემაზე.'
+'Complex Date': 'კომპლექსური თარიღი '
+vertices: მწვერვალი
+'There was a problem trying to execute the XML RPC function.': 'XML RPC ფუნქციის შესრულებისას დაფიქსირდა პრობლემა.'
+'The Campcaster server configuration is invalid.': 'კემპკასტერის სერვერის კონფიგურაცია არასწორია'
+'Pan Map': 'ინტერაქტიული რუკა'
+'Open large map': 'გახსენით დიდი რუკა'
+'No news available.': 'ახალი ამბები არ არის.'
+'Edit Polygon': 'პოლიგონის რედაქტირება'
+'Create Polygon': 'პოლიგონის შექმნა'
+'Communication error: ': 'კომუნიკაციის ხარვეზი:'
+'Cant fetch news from $1': '$1-დან ნიუსი არ მოდის'
+Loading...: იტვირთება...
+Version: ვერსია
+License: ლიცენზია
+Homepage: მთავარი
+'Show original map': 'მაჩვენე ორიგინალი რუკა'
+'The uploaded archive does not contain an valid newscoop plugin.': 'ატვირთული არქივი არ შეიცავს ნიუსქუფის მუშა ფლაგინს.'
+Map: რუკა
+Center: ცენტრი
+Title: სათაური
+'Invalid security token.': 'არასწორია უსაფრთხოების სიმბოლო'
+'Callback $1 is not callable.': 'უკან გაწვევა $1 არ ექვემდებარება გაწვევას. '
+'Article translated to $4 ($5)': 'სტატია ითარგმნა $4 ($5) ენაზე'
+'Article status changed from $1 to $2.': 'სტატიის სტატუსი შეიცვალა $1-დან $2-სკენ'
+'Article deleted.': 'სტატია წაიშალა.'
+'Article created.': 'სტატია შეიქმნა.'
+'Article copied to Article $4 (publication $5, issue $6, section $7).': 'სტატია დაკოპირდა $4 სტატიაში (პუბლიკაცია $5, გამოცემა $6, სექცია $7).'
+'Article URL': 'სტატიის URL'
+'Article Number': 'სტატიის ნომერი'
+'Access denied.': 'წვდომა აკრძალულია'
+'Publish with issue': 'გამოქვეყნება გამოცემასთან ერთად'
+'Article "$1" not processed': null
+unknown: უცნობი
+Switch: გადართვა
+Numeric: რიცხვითი
+'The uploaded file format is unsupported.': 'ატვირთული ფაილის ფორმატი შეუსაბამოა'
+'The following fields are mandatory:': 'ეს ველები არის სავალდებულო'
+'Missing value for $1': '$1-ის დანიშნულება არ არსებობს'
+'Manage Plugins': 'პლაგინების მართვა'
+'* Marked fields are mandatory.': '*-ით მონიშნული ველები სავალდებულოა'
+'$1 is of type $2': '$1 არის $2 ტიპის'
+'Invalid resize width/height.': 'არასწორი სიმაღლის/სიგანის ზომა'
+'Image type $1 is not supported.': 'სურათის ტიპი $1 შეუსაბამოა'
+'The file uploaded is not an image.': 'ატვირთული ფაილი არ არის სურათი'
+'Could not delete record from the database.': 'მონაცემის ბაზიდან წაშლა უშედეგოდ დასრულდა'
+'template path': 'შაბლონის ბმული'
+'short names': 'მოკლე სახელები'
+'Unable to fetch image from remote server.': 'ამ სურათის სერვერიდან აგრეგირება შეუძლებელია'
+Last: ბოლო
+First: პირველი
+'Single-line Text': 'ერთ-ხაზიანი ტექსტი'
+'Multi-line Text with WYSIWYG': 'მრავალ-ხაზიანი ტექსტი WYSIWYG-ით'
+'URL $1 is invalid or is not an image.': '$1 URL არასწორია, ან არ არის სურათი'
+'URL $1 is not an image.': '$1 URL არ არის სურათი'
+client:
+    added: null
+    notfound: null
+    removed: null
+publicresources:
+    updated: null
+api:
+    configure:
+        title: null
+        title_content: null
+        tabs:
+            resources: null
+            clients: null
+        resources:
+            info: null
+            api_docs: null
+            add_button: null
+        clients:
+            table:
+                name: null
+                id: null
+                secret: null
+                trusted: null
+                redirect: null
+                publication: პუბლიკაცია
+                actions: მოქმედება
+                actions_buttons:
+                    remove: მოხსნა
+            actions:
+                remove:
+                    confirm: null
+        menu: null
+    form:
+        client:
+            label:
+                name: null
+                publication: null
+                redirectUris: null
+                trusted: null
+                save: შენახვა
+        PublicResources:
+            label:
+                routes: null
+                save: შენახვა

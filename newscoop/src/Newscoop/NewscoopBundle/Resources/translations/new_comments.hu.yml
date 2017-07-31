@@ -1,0 +1,66 @@
+comments:
+    label:
+        comments: 'Hozzászólások kezelése'
+        menu: Hozzászólások
+        banned: Kitiltva
+        anonymous: Névtelen
+        at: null
+        noentries: 'Nem találhatók bejegyzések.'
+        showing: Megjelenítve
+        of: /
+        to: '-'
+        entries: bejegyzés
+        fullarticle: 'Teljes cikk'
+        hidden: Rejtett
+        approved: Jóváhagyva
+        new: Új
+        editarticle: 'Ugrás a cikk szerkesztésére'
+        section: Rovat
+        comment: Hozzászólás
+        replyto: 'Válasz a hozzászólásra'
+        subject: Tárgy
+        ban: 'Felhasználó kitiltása/kitiltásának megszüntetése'
+        author: Szerző
+        date: 'Dátum / Hozzászólás'
+        article: Cikk
+        search: Keresés
+        show: Megjelenítés
+        recommended: Ajánlott
+        unrecommended: null
+        editcomment: 'Hozzászólás gyors szerkesztése'
+        actions: Műveletek
+        selectstatus: 'Válassz állapotot'
+        deleted: Törölve
+        alert: Figyelmeztetés
+        searchholder: 'Keresés... ( pl. név, e-mail cím, tárgy, hozzászólás, cikk címe)'
+    btn:
+        cancel: Mégse
+        submit: Küldés
+        unrecommend: null
+        recommend: Ajánlás
+        delete: Törlés
+        reply: Válasz
+        edit: Gyorsszerkesztés
+        close: Bezárás
+        okay: OK
+        filter: Szűrő
+    msg:
+        deleted: 'A hozzászólás törlése megtörtént.'
+        commentinarticle: '$4 hozzászólás $1 által a/z $2 ($3) cikkben'
+        status:
+            new: új
+            approved: jóváhagyott
+            hidden: rejtett
+            single: 'Hozzászólás állapotának módosítása erre:'
+            all: 'Hozzászólások állapotának módosítása erre:'
+        error:
+            reach: 'Nem érhető el a Newscoop. Ellenőrizd az internetkapcsolatodat.'
+            deletefromarticle: 'Hozzászólás $1 általi törlése a/z $2 ($3) cikkből'
+            statuschange: 'Hiba történt a hozzászólás állapotának módosításakor'
+            delete: 'Ezt a hozzászólást nem lehet törölni.'
+            update: 'A mezők nem lehetnek üresek'
+        sure: 'Egy hozzászólás végleges törlésére készülsz.'
+        suremultiple: 'Hozzászólások végleges törlésére készülsz.'
+        first: 'Előbb válassz hozzászólást/hozzászólásokat!'
+        surequestion: 'Biztosan végre akarod ezt hajtani?'
+        updated: 'A hozzászólás frissítése megtörtént.'

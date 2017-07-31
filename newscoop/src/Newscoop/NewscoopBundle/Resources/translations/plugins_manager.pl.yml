@@ -1,0 +1,51 @@
+newscoop.plugins_manager.manager: 'Zarządzanie wtyczkami'
+newscoop.plugins_manager.legacy_manager: 'Stare zarządzanie wtyczkami'
+newscoop.plugins_manager.public_plugins: 'Pluginy publiczne'
+newscoop.plugins_manager.private_plugins: 'Pluginy prywatne'
+newscoop.plugins_manager.install.public: 'Instaluj publiczne pluginy'
+newscoop.plugins_manager.installed_table.name: Nazwa
+newscoop.plugins_manager.installed_table.description: Opis
+newscoop.plugins_manager.installed_table.enabled: Aktywny
+newscoop.plugins_manager.installed_table.version: Wersja
+newscoop.plugins_manager.installed_table.license: Licencja
+newscoop.plugins_manager.installed_table.installed_at: 'Data instalacji'
+newscoop.plugins_manager.installed_table.updated_at: 'Data aktualizacji'
+newscoop.plugins_manager.installed_table.actions: Akcje
+newscoop.plugins_manager.installed_table.update_plugin: Aktualizuj
+newscoop.plugins_manager.installed_table.remove_plugin: Usuń
+newscoop.plugins_manager.installed_table.install_plugin: Instaluj
+newscoop.plugins_manager.installed_table.plugin_installed: Zainstalowany
+newscoop.plugins_manager.upload.private: 'Wgraj plik prywatnego pluginu'
+newscoop.plugins_manager.search_for_plugins: 'Szukaj pluginów'
+newscoop.plugins_manager.form.package: 'Plik pluginu'
+newscoop.plugins_manager.form.submit: Wgraj
+newscoop.plugins_manager.runcommand: 'Uruchom polecenie'
+newscoop.plugins_manager.openterminal: 'Otwórz terminal konsoli i uruchom polecenie'
+newscoop.plugins_manager.installassets: 'Zainstaluj wymagane pliki'
+newscoop.plugins_manager.done: 'Zakończono. Zamknij to okno i odśwież stronę. '
+newscoop.plugins_manager.close: Zamknij
+newscoop.plugins_manager.update: 'Jak zaktualizować wtyczkę?'
+newscoop.plugins_manager.install: 'Jak zainstalować wtyczkę?'
+newscoop.plugins_manager.remove: 'Jak usunąć wtyczkę?'
+newscoop.plugins_manager.installed: 'Zakończono. Odśwież tą stronę. Wtyczka powinna być widoczna na liście zainstalowanych wtyczek.'
+newscoop.plugins_manager.clipboard: 'Skopiuj do schowka: Ctrl+C (Cmd + C na komputerach Mac), Enter'
+newscoop.plugins_manager.downloads: pobrania
+newscoop.plugins_manager.favers: Ulubione
+newscoop.plugins_manager.private_plugins_not_writable: null
+newscoop.plugins_manager.private_plugins_not_writable_commands: null
+newscoop:
+    datatable:
+        table:
+            info: 'Widoczne _START_ do _END_ z _TOTAL_ rekordów'
+            noentries: 'Nie ma żadnych rekordów'
+            filtering: ' - filtrowanie z _MAX_ rekordów'
+            menu: 'Pokazuje _MENU_ rekordów'
+        label:
+            search: Szukaj
+            filter: Filtruj
+            processing: Przetwarzanie...
+            last: Ostatni
+            next: Następny
+            first: Pierwszy
+            previous: Poprzedni
+            norecords: 'Nie znaleziono żadnych rekordów.'

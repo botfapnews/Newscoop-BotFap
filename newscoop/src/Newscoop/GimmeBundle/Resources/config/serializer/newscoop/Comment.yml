@@ -1,0 +1,105 @@
+Newscoop\Entity\Comment:
+    exclusion_policy: ALL
+    properties:
+        id:
+            expose: true
+            read_only: true
+            type: integer
+            groups: ["details", "list"]
+            serialized_name: id
+        subject:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["details", "list"]
+            serialized_name: subject
+        message:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["details", "list"]
+            serialized_name: message
+        time_updated:
+            expose: true
+            read_only: true
+            type: DateTime
+            groups: ["details", "list"]
+            serialized_name: updated
+            access_type: public_method
+            accessor:
+                getter: getTimeUpdated
+            since_version: 1.1
+        time_created:
+            expose: true
+            read_only: true
+            type: DateTime
+            groups: ["details", "list"]
+            serialized_name: created
+        commenter:
+            expose: true
+            read_only: true
+            groups: ["details", "list"]
+            accessor:
+                getter: getCommenter
+                setter: setCommenter
+            serialized_name: commenter
+            since_version: 1.1
+        parent:
+            expose: true
+            read_only: true
+            type: integer
+            accessor:
+                getter: getParentId
+            groups: ["details", "list"]
+            serialized_name: parent
+            since_version: 1.1
+        thread_level:
+            expose: true
+            read_only: true
+            type: integer
+            groups: ["details", "list"]
+            serialized_name: thread_level
+            since_version: 1.1
+        thread_order:
+            expose: true
+            read_only: true
+            type: integer
+            groups: ["details", "list"]
+            serialized_name: thread_order
+            since_version: 1.1
+        recommended:
+            expose: true
+            read_only: true
+            type: integer
+            groups: ["details", "list"]
+            serialized_name: recommended
+            since_version: 1.1
+        status:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["details", "list"]
+            serialized_name: status
+            access_type: public_method
+            since_version: 1.1
+        likes:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["details", "list"]
+            serialized_name: likes
+            access_type: public_method
+            since_version: 1.1
+        dislikes:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["details", "list"]
+            serialized_name: dislikes
+            access_type: public_method
+            since_version: 1.1
+    virtual_properties:
+        getCommenterName:
+            type: string
+            serialized_name: author
+            groups: ["details", "list"]

@@ -1,0 +1,72 @@
+'Language id not specified': null
+'No languages.': null
+'Native Name': null
+'Name taken.': null
+'Language saved.': null
+'Language removed.': null
+'Language not found.': null
+'Language is in use and cannot be removed.': null
+'Language added.': null
+'English language cannot be removed.': null
+'Edit short month names': null
+'Edit short day names': null
+'Edit month names': null
+'Edit language: $1': null
+'Edit day names': null
+'Code Page': null
+'Add new Language': null
+'Add Language': null
+We: null
+Tu: null
+Th: null
+Su: null
+Sep: null
+Sa: null
+'Please enter the translation for week day short names.': null
+'Please enter the translation for month short names.': null
+Oct: null
+Nov: null
+Mo: null
+Mar: null
+Jun: null
+Jul: null
+Jan: null
+Fr: null
+Feb: null
+Dec: null
+Aug: null
+Apr: null
+'No language.': 'Aucune langue.'
+'Delete language $1': 'Supprimer langue $1'
+'You do not have the right to add languages.': 'Vous navez pas le droit dajouter des langues'
+'Please enter the translation for time units.': 'SVP entrer la traduction pour les unités de temps.'
+'You do not have the right to delete languages.': 'Vous navez pas le droit de supprimer des langues. '
+'Are you sure you want to delete the language $1?': 'Etes-vous sûrs que vous voulez supprimer la langue $1 ? '
+'Deleting language': 'Suppression langue'
+'The language $1 could not be deleted.': 'La langue $1 ne pouvait pas être supprimé.'
+'Edit language': 'Editer langue'
+'You do not have the right to edit languages.': 'Vous navez pas le droit déditer des langues. '
+'Please enter the translation for month names.': 'SVP entrer la traduction pour les mois.'
+'Please enter the translation for week day names.': 'SVP entrer la traduction pour les jours de la semaine.'
+January: Janvier
+February: Fevrier
+March: Mars
+April: Avril
+May: Mai
+June: Juin
+July: Juillet
+August: Août
+September: Septembre
+October: Octobre
+November: Novembre
+December: Décembre
+Monday: Lundi
+Tuesday: Mardi
+Wednesday: Mercredi
+Thursday: Jeudi
+Friday: Vendredi
+Saturday: Samedi
+Sunday: Dimanche
+'You do not have the right to add new languages.': 'Vous navez pas le droit dajouter de nouvelles langues.'
+'There are $1 issue(s) left.': 'Il manque $1 édition(s).'
+'Native name': 'Nom dorigine'

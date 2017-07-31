@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Newscoop Installer</title>
+  <link rel="shortcut icon" href="../admin-style/images/7773658c3ccbf03954b4dacb029b2229.ico" />
+  <link rel="stylesheet" type="text/css" media="screen" href="../install/Resources/assets/css/main.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <img class="logo" src="../install/Resources/assets/css/logo.png">
+    <div class="main_box {% block fixed %}fixed{% endblock %}">
+      <div class="top">
+        <h2>{% block header %}{% endblock %}</h2>
+      </div>
+       {% block content %}{% endblock %}
+      <p class="version_num">
+          <a href="http://newscoop.sourcefabric.org/" target="_blank">{{ NewscoopVersion.getPackage() }}</a>, the open content management system for professional journalists.
+          <br />
+          &copy; {{ NewscoopVersion.getCopyrightYear() }}
+          <a href="{{ NewscoopVersion.getWebURL() }}" target="_blank">{{ NewscoopVersion.getOrganization() }}</a> {{ NewscoopVersion.getPackage() }} is distributed under {{ NewscoopVersion.getLicense() }}
+      </p>
+    </div>
+  </div>
+</body>
+</html>

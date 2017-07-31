@@ -1,0 +1,259 @@
+
+dl.zend_form {
+    width: 550px;
+    margin: 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #9d9d9d;
+    -mozilla-box-shadow: 2px 2px 3px #ccc;
+    -webkit-box-shadow: 2px 2px 3px #d4d4d4;
+    box-shadow: 2px 2px 3px #e5e5e5;
+}
+
+body.with-sidebar dl.zend_form {
+    width: auto;
+}
+
+.zend_form dt {
+    margin-top: 8px;
+    padding: 0;
+    position: relative;
+    font-weight: bold;
+    color: #696969;
+}
+
+.zend_form dt:first-child {
+    margin-top: 0;
+}
+
+.zend_form dd {
+    margin: 4px 0 0;
+    padding: 0;
+}
+
+.zend_form dd .description{ font-size: 11px; }
+
+.zend_form dd input[type=text], .zend_form dd input[type=password] {
+    display: block;
+    width: 80%;
+    color: #333;
+
+    background-color: #FFFFFF;
+    border: 1px solid #9D9D9D;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 23px;
+    margin: 0;
+    padding: 0;
+    text-indent: 3px;
+    -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.zend_form dd textarea {
+    display: block;
+    color: #333;
+    background-color: #FFFFFF;
+    border: 1px solid #9D9D9D;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    text-indent: 3px;
+    -moz-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+.zend_form dd input[type=password] {
+    width: 50%;
+    background-color: #F8F8F8;
+}
+
+.zend_form dd input[type=file] {
+    width: 80%;
+}
+
+.zend_form dd input[type=text]:focus, .zend_form dd input[type=password]:focus, .zend_form dd textarea:focus {
+    border: 1px solid #00b5f1;
+}
+
+.zend_form dd input.small
+{
+    width: 40px;
+}
+
+.zend_form dd select {
+    width: 50%;
+    margin: 0;
+    padding: 3px 5px;
+    border: 1px solid #9d9d9d;
+}
+
+.zend_form dd ul.errors {
+    margin: 3px 0;
+    padding: 0 8px;
+}
+
+.zend_form dd ul.errors li {
+    font-size: 1.1em;
+    color: #cc0000;
+}
+
+.zend_form fieldset {
+    border: 1px solid #ccc;
+}
+
+.zend_form fieldset.closed {
+    border-left-color: #fff;
+    border-bottom-color: #fff;
+    border-right-color: #fff;
+}
+
+.zend_form fieldset legend .ui-icon {
+    float: left;
+}
+
+.zend_form dd input[type=submit] {
+    margin: 0;
+    padding: 3px 12px 4px;
+    color: #fff;
+    background-color: #007fb3;
+    background: -moz-linear-gradient(top, #2390bd 0, #007fb3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #2390bd), color-stop(100%, #007fb3));
+    border: 1px solid #007fb3;
+    cursor: pointer;
+}
+
+.zend_form dd input[type=submit]:hover {
+    border: 1px solid #005e85;
+    background: #005e85;
+    background: -moz-linear-gradient(top, #409fc6 0, #007fb3 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #409fc6), color-stop(100%, #007fb3));
+}
+
+
+.zend_form dd.buttons {
+    margin-top: 13px;
+    padding: 0;
+}
+
+.zend_form label {
+    cursor: pointer;
+}
+
+.zend_form label[for=type-allow], .zend_form label[for=type-deny] {
+    display: block;
+    line-height: 21px;
+    color: #444;
+    background-color: #b4b4b4;
+    border-radius: 5px;
+}
+
+.zend_form label[for=type-allow] input, .zend_form label[for=type-deny] input {
+    vertical-align: top;
+}
+
+.zend_form label[for=type-allow].checked {
+    color: #fff;
+    background-color: #55a112;
+}
+
+.zend_form label[for=type-deny].checked {
+    color: #fff;
+    background-color: #da0101;
+}
+
+/** Filter form */
+.filter dl.zend_form {
+    height: 1%;
+    overflow: hidden;
+    margin: 0;
+    padding: 5px;
+    background-color: transparent;
+    border: none;
+    -mozilla-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.filter dl.zend_form > * {
+    float: left;
+    margin: 0;
+    padding: 0;
+    line-height: 23px;
+}
+
+.filter dl.zend_form dt {
+    padding-top: 1px;
+}
+
+.filter dl.zend_form dd {
+    margin-left: 1em;
+}
+
+.filter dl.zend_form dd * {
+    width: auto;
+}
+
+.popup .zend_form { 
+    border: none;
+    padding: 0 0 12px 0;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    margin:0;
+    width: 100%;
+}
+
+form.popup dd input[type="text"] {
+    width: 99%;
+}
+
+h1 .inline.zend_form {
+    display: inline;
+    float: none;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+h1 .inline dt {
+    display: none;
+}
+
+h1 .inline dd {
+    display: inline;
+}
+
+h1 .inline .top-input {
+    float: none;
+}
+
+h1 .inline #name {
+    width: 34em;
+    display: inline;
+}
+
+h1 .inline #submit {
+
+}
+
+.form-div-container {
+    width: 100%;
+}
+
+.form-div {
+    float: left;
+}
+
+.form-div.left-box {
+    width: 48%;
+    margin-right: 1%;
+}
+
+.form-div.right-box {
+        width: 51%;
+}

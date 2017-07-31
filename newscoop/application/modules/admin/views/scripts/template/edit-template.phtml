@@ -1,0 +1,94 @@
+<?php
+$this->form->content->setAttrib('id', 'template-edit-area');
+?>
+
+<div class="template ui-widget-content small-block block-shadow theme-edit">
+<form enctype="multipart/form-data" method="post" class="replace" action="" name="replaceForm">
+<dl class="zend_form">
+<dd>
+<fieldset id="fieldset-theme_replace" class="toggle">
+	<legend>Replace existing template</legend>
+	<dl>
+	   <dd style="text-align: left;">
+		<p class="info-text"> You can replace the existing template with a new one of your choice. Browse below for a new template on your local disc, and <em>Replace</em> to apply the change.</p>
+
+            <dl>
+	            <?php echo $this->replaceForm->getElement('file'); ?>
+	            <div class="save-button-bar" style="display: block">
+	                <input type="button" name="cancel" id="cancel" value="Cancel" onClick="document.replaceForm.reset();return false">
+	                <input type="submit" name="submit" id="submit" value="Replace">
+	            </div>
+            </dl>
+
+		    </dd>
+	    </dl>
+	</fieldset>
+</dd>
+</dl>
+</form>
+
+<form enctype="application/x-www-form-urlencoded" method="post" action="" name="editTemplate">
+<dl class="zend_form">
+    <?php echo $this->form->getElement('csrf'); ?>
+    <?php echo $this->form->getElement('content'); ?>
+    <fieldset id="fieldset-geo_filtering" class="toggle">
+    <legend>Geofiltering</legend>
+    <dl>
+        <?php echo $this->form->getElement('geo_filtering'); ?>
+    </dl>
+    </fieldset>
+
+    <fieldset id="fieldset-cache_lifetime">
+    <legend>Cache lifetime</legend>
+    <dl>
+        <?php echo $this->form->getElement('cache_lifetime'); ?>
+    </dl>
+    </fieldset>
+    <?php echo $this->form->getElement('submit'); ?>
+</dl>
+</form>
+</div>
+
+<script type="text/javascript" src="<?php echo $this->baseUrl('/js/editarea/edit_area/edit_area_full.js'); ?>"></script>
+<script type="text/javascript">
+$(function() {
+
+    editAreaLoader.init({
+        id : "template-edit-area",
+        start_highlight: true,
+        allow_toggle: true,
+        toolbar: "search, go_to_line, |, undo, redo, |, select_font, |, syntax_selection, highlight, reset_highlight, word_wrap, |, change_smooth_selection, fullscreen, |, help",
+        syntax: "smarty",
+        syntax_selection_allow: "css,html,js,php,smarty,xml",
+        is_editable: "true",
+        replace_tab_by_spaces: 2,
+        min_height: 600
+    });
+
+});
+</script>
+
+<script type="text/javascript">
+
+window.open_filter_popup = function () {
+	var url = "<?php echo $this->baseUrl('/admin/articles/locations/filter.php'); ?>";
+	if ((!window.geo_filter_window) || (window.geo_filter_window.closed)) {
+		window.geo_filter_window = window.open(url, 'geo_filter','height=680,width=900');
+	}
+	try {
+		if (window.focus)
+		{
+			geo_filter_window.focus();
+		}
+	} catch (e) {alert(e);}
+
+};
+
+$(function() {
+	$('#geo_filtering').click(function() {
+		window.open_filter_popup();
+	});
+});
+
+</script>
+

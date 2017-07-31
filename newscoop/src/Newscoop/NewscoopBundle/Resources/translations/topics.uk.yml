@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'Якщо Ви продовжите, теми та підтеми будуть відкріплені від усіх статей і видалені.'
+'Delete anyway': 'Видалить у будь-якому випадку.'
+'Reset order': 'Переустановлення порядку слідування.'
+'Order changes will be lost. Are you sure you want to continue?': 'Зміни порядку були втрачені. Ви бажаєте продовжити?'
+'Topics order saved.': 'Порядок тем збережено.'
+'Show languages': 'Показати мови'
+'Save order': 'Зберегти порядок'
+'Click to edit': 'Клікніть для редагування'
+'Add root topic': 'Додати основну тему'
+'Topic was deleted.': 'Тема видалена.'
+'The topic name is already in use by another topic.': 'Назва вже існуе у іншій темі'
+'You must enter a name for the topic.': 'Ви маєте ввести назву теми.'
+'You must choose a language for the topic.': 'Ви маєте вибрати мову теми.'
+'This topic has subtopics, therefore it cannot be deleted.': 'Ця тема має підтему, отже не може бути видалена.'
+'Add translation:': 'Додати переклад:'
+'Add subtopic:': 'Додати підтему:'
+Top: Верх
+'You do not have the right to add topics.': 'Ви не маєте прав додавати нові теми.'
+'You do not have the right to delete topics.': 'Ви не маєте прав видаляти нові теми.'
+'Are you sure you want to delete the topic $1?': 'Ви впевнені, що хочете видалити тему $1?'
+'You do not have the right to change topic name.': 'Ви не маєте прав перейменовувати теми.'
+'The topic $1 could not be deleted.': 'Неможливо видалити тему $1'
+'Adding new topic': 'Додання нової теми.'
+'Deleting topic': 'Видалення теми.'
+'Change topic name': 'Перейменувати тему'
+'There are $1 articles using the topic.': 'Тема використовується у $1 статті(-ях)'
+'Search for topics': null
+topics:
+    tip: null
+    label:
+        all: null
+        filterbylang: null
+        search: null
+        filterplaceholder: null
+        addroot: null
+        topicname: null
+        expandcollapse: null
+        changename: null
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: null
+    btn:
+        hide: null
+        remove: null
+        edit: null
+        close: null
+        add: null
+        save: null
+        saveandclose: null
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: null
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null

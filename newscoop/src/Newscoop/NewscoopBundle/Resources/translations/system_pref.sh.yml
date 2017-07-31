@@ -1,0 +1,164 @@
+newscoop:
+    btn:
+        save: Snimi
+    preferences:
+        error:
+            cache: null
+            replication: null
+            maxupload: null
+            geolocation: null
+            noaccess: null
+            latitude: null
+            longitude: null
+            cacheNotCleared: null
+            joberror: null
+            jobnotifyerror: null
+        success:
+            saved: null
+            cacheCleared: 'Keš je obrisan'
+            jobenabled: null
+            jobdisabled: null
+            jobnotifyswitched: null
+        menu:
+            general: 'Opšta podešavanja'
+            email: 'Podešavanja e-maila'
+            editor: 'Podešavanja editora'
+            geolocation: 'Podešavanja geo-lokacija'
+            fb: 'Podešavanja Facebooka'
+            media: 'Podešavanja videa'
+            cache: 'Podešavanja keša'
+            other: 'Ostala podešavanja'
+            recaptcha: 'Podešavanja reCAPTCHA'
+            cronjob: null
+        btn:
+            cleardatabasecache: null
+            disable: null
+            enable: null
+        label:
+            title: 'Sistemske postavke'
+            header: null
+            siteonline: null
+            sitetitle: null
+            metakeywords: null
+            metadescription: null
+            timezone: null
+            cacheengine: null
+            cacheenginehost: null
+            cacheengineport: null
+            cachetemplate: null
+            cacheimage: null
+            allowrecovery: null
+            secretkey: null
+            sessionlifetime: null
+            sessionlifetimemsg: null
+            separator: null
+            captcha: null
+            maxupload: null
+            maxuploadmsg: null
+            stats: null
+            smtphost: null
+            smtpport: null
+            email: null
+            emailfrom: null
+            imageratio: null
+            imagewidth: null
+            imageheight: null
+            zoom: null
+            mediaRichTextCaptions: null
+            mediaCaptionLength: null
+            mediaCaptionLength_after: null
+            external: null
+            usereplication: null
+            serverdb: null
+            replicationhost: null
+            replicationuser: null
+            replicationpw: null
+            replicationport: null
+            filter: null
+            cron: null
+            mysqlpath: null
+            mysqlpathmsg: null
+            latitude: null
+            longitude: null
+            zoomlevel: null
+            defaultwidth: null
+            defaultheight: null
+            css: null
+            autofocus: null
+            zoomautofocus: null
+            borderautofocus: null
+            mapprovider: null
+            mapquest: null
+            openstreet: null
+            defaultmapprovider: null
+            nominatimsearch: null
+            preflanguage: null
+            markerdir: null
+            defaultmarker: null
+            popupwidth: null
+            popupheight: null
+            youtubewidth: null
+            youtubeheight: null
+            vimeowidth: null
+            vimeoheight: null
+            flashwidth: null
+            flashheight: null
+            flashserver: null
+            flashdir: null
+            apikey: null
+            appid: null
+            fbsecret: null
+            recaptchapublickey: null
+            recaptchaprivatekey: null
+            recaptchasecure: null
+            disabled: null
+            yesoption: Da
+            nooption: Ne
+            geosearch: null
+            usergarbage: null
+            usergarbagedaysinfo: null
+            usergarbagedays: null
+            smartyUseProtocol: null
+            cronjob: null
+            enabled: Status
+            options: Opcije
+            info: null
+            infodesc: null
+            prevRun: null
+            nextRun: null
+            norecords: 'Nema zapisa'
+            cronJobEmail: null
+            cronJobSenderEmail: null
+            cronJobSenderName: null
+            cronJobNotify: null
+            cronslist: null
+            cronsadvanced: null
+            moredetails: null
+        popover:
+            cronJobEmail: null
+            cronJobSenderEmail: null
+            cacheengine: null
+            cacheenginehost: null
+            cacheengineport: null
+            cacheimage: null
+            cachetemplate: null
+            recovery: null
+            secret: null
+            separator: null
+            stats: null
+            zoom: null
+            richtext_status: null
+            richtext_length: null
+            ratio: null
+            replication: null
+            filter: null
+            cron: null
+            video: null
+            emailfrom: null
+            recaptcha:
+                publickey: null
+                privatekey: null
+                secure: null
+            garbage: null
+            lifetime: null
+            smartyuseprotocol: null

@@ -1,0 +1,72 @@
+'Language id not specified': null
+'No languages.': null
+'Native Name': null
+'Name taken.': null
+'Language saved.': null
+'Language removed.': null
+'Language not found.': null
+'Language is in use and cannot be removed.': null
+'Language added.': null
+'English language cannot be removed.': null
+'Edit short month names': null
+'Edit short day names': null
+'Edit month names': null
+'Edit language: $1': null
+'Edit day names': null
+'Code Page': null
+'Add new Language': null
+'Add Language': null
+We: null
+Tu: null
+Th: null
+Su: null
+Sep: null
+Sa: null
+'Please enter the translation for week day short names.': null
+'Please enter the translation for month short names.': null
+Oct: null
+Nov: null
+Mo: null
+Mar: null
+Jun: null
+Jul: null
+Jan: null
+Fr: null
+Feb: null
+Dec: null
+Aug: null
+Apr: null
+'No language.': 'Inget språk.'
+'Delete language $1': 'Radera språk $1'
+'You do not have the right to add languages.': 'Du har inte rätt att lägga till språk.'
+'Please enter the translation for time units.': 'Var god skriv in översättningar för tidsenheter.'
+'You do not have the right to delete languages.': 'Du har inte rätt att radera språk.'
+'Are you sure you want to delete the language $1?': 'Är du säker att du vill radera språket $1?'
+'Deleting language': 'Raderar språk'
+'The language $1 could not be deleted.': 'Språket $1 kunde inte raderas.'
+'Edit language': 'Redigera språk'
+'You do not have the right to edit languages.': 'Du har inte rätt att redigera språk.'
+'Please enter the translation for month names.': 'Var god skriv in översättningar för månadsnamn.'
+'Please enter the translation for week day names.': 'Var god skriv in översättningar för dagars namn.'
+January: Januari
+February: Februari
+March: Mars
+April: April
+May: Maj
+June: Juni
+July: Juli
+August: Augusti
+September: September
+October: Oktober
+November: November
+December: December
+Monday: Måndag
+Tuesday: Tisdag
+Wednesday: Onsdag
+Thursday: Torsdag
+Friday: Fredag
+Saturday: Lördag
+Sunday: Söndag
+'You do not have the right to add new languages.': 'Du har inte rätt att lägga till nya språk.'
+'There are $1 issue(s) left.': 'Det finns $1 utgåva(or) kvar.'
+'Native name': 'Inhemskt namn'

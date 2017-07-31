@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'Pokud budete pokračovat, bude téma a všichni podtémata oddělena od všech článků a smazána.'
+'Delete anyway': 'Stejně odstranit'
+'Reset order': 'Přenastavit pořadí'
+'Order changes will be lost. Are you sure you want to continue?': 'Požadované změny budou ztraceny. Jste si jisti, že chcete pokračovat?'
+'Topics order saved.': 'Pořadí témat uloženo.'
+'Show languages': 'Ukázat jazyky'
+'Save order': 'Uložit příkaz'
+'Click to edit': 'Klikněte pro možnost úpravy'
+'Add root topic': 'Přidat zdrojové téma'
+'Topic was deleted.': 'Téma bylo odstraněno.'
+'The topic name is already in use by another topic.': 'Název námětu je již užíván u jiného námětu.'
+'You must enter a name for the topic.': 'Musíte vložit název námětu.'
+'You must choose a language for the topic.': 'Zvolte jazyk tématu.'
+'This topic has subtopics, therefore it cannot be deleted.': 'Téma obsahuje podtémata, proto nemůže být odstraněno.'
+'Add translation:': 'Přidat překlad:'
+'Add subtopic:': 'Přidat témata:'
+Top: Nahoře
+'You do not have the right to add topics.': 'Nemáte právo přidat témata'
+'You do not have the right to delete topics.': 'Nemáte právo mazat témata'
+'Are you sure you want to delete the topic $1?': 'Určitě chcete smazat téma $1?'
+'You do not have the right to change topic name.': 'Nemáte právo měnit název tématu'
+'The topic $1 could not be deleted.': 'Téma $1 nemohlo být smazáno'
+'Adding new topic': 'Přidání nového témata'
+'Deleting topic': 'Mazání tématu'
+'Change topic name': 'Změnit název témata'
+'There are $1 articles using the topic.': '$1 článků používá toto téma'
+'Search for topics': null
+topics:
+    tip: null
+    label:
+        all: null
+        filterbylang: null
+        search: null
+        filterplaceholder: null
+        addroot: null
+        topicname: null
+        expandcollapse: null
+        changename: null
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: null
+    btn:
+        hide: null
+        remove: null
+        edit: null
+        close: null
+        add: null
+        save: null
+        saveandclose: null
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: null
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null

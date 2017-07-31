@@ -1,0 +1,56 @@
+<?php 
+$translator = \Zend_Registry::get('container')->getService('translator');
+$this->headTitle($translator->trans('Upload', array(), 'themes').' - Newscoop Admin', 'SET'); 
+?>
+
+<?php if (!$this->isWritable) {
+    echo $this->renderError($translator->trans("$1 is not writable", array('$1' => $this->path), 'themes'));
+    return;
+} ?>
+
+<?php echo $this->form; ?>
+
+<?php $this->plupload(); ?>
+
+<script type="text/javascript">
+$(function() {
+    // get existing files for given path
+    var items = [];
+    $.getJSON('<?php echo $this->url(array(
+        'action' => 'get-items',
+        'format' => 'json',
+    )); ?>', function(data) {
+        items = data.items;
+    });
+
+    // ask for confirmation if file would override existing
+    uploader = $('#uploader').pluploadQueue();
+    uploader.bind('FilesAdded', function(up, files) {
+        for (i in files) {
+            var file = files[i];
+
+            if (file.size == 0) {
+            	alert("<?php echo $translator->trans("The file $1 is empty.", array('$1' => '" + file.name + "'), 'themes'); ?>");
+            	uploader.removeFile(uploader.getFile(file.id));
+            }
+
+            for (j in items) {
+                var item = items[j];
+                if (item.name == file.name) { // conflict
+                    if (!item.id) { // dir
+                        alert("<?php echo $translator->trans("Cant override directory $1.", array('$1' => '" + item.name + "'), 'themes'); ?>");
+                        up.removeFile(file);
+                    } else if (!confirm("<?php echo $translator->trans("Do you want to override $1?", array('$1' => '" + file.name + "'), 'themes'); ?>")) {
+                        up.removeFile(file);
+                    }
+
+                    break;
+                }
+            }
+        }
+    });
+	uploader.bind('Error', function(up, args) {
+		if( console ) console.dir(args);
+	});
+});
+</script>

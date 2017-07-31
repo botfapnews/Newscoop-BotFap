@@ -1,0 +1,62 @@
+'so that default templates can be assigned to the issue.': null
+'Once this is done, the issue can be published': null
+'This issue cannot be previewed. Please make sure the publication has a theme assigned.': null
+'This issue cannot be previewed. Please make sure it has the front template selected.': null
+'Publish all articles:': null
+'Publish all articles': null
+'Force publishing of all articles. If set to No, only articles with Publish with Issue status will be published.': null
+default: null
+'The publishing/unpublishing can not be set the same time': null
+'The publishing schedule can not be set in the past': null
+'Please assign at least one theme to the publication': null
+'Issue Theme': null
+'The values you are trying to set conflict with issue $1$2. $3 ($4)$5.': null
+'The number must be unique for each issue in this publication of the same language.': null
+'The language and URL name must be unique for each issue in this publication.': null
+'Issue created.': null
+'Issue updated': null
+'Could not save the changes to the issue.': null
+'Unpublish on: $1': null
+'There are $1 articles in this issue.': null
+'The issue $1 has been deleted.': null
+Schedule: null
+'Publish on: $1': null
+'Publish Date $1': null
+'Deleted issue': null
+'Delete issue': null
+'Click here to publish this issue': null
+'A total of $1 articles were deleted.': null
+'Name<BR><SMALL>(click to see sections)</SMALL>': 名称
+'Delete issue $1': 删除议题$1
+'You do not have the right to change issues.': 您无权改变议题
+'Are you sure you want to change the issue $1 status from $2 to $3?': '你确认要把议题$1的状态从$2改成$3?'
+'Add new translation': 添加新翻译
+'You do not have the right to add issues.': 您无权增加议题
+'The issue $1 has been successfuly added.': 议题$1已成功添加
+'The issue could not be added.': 议题不能被添加
+'Change issue details': 改变议题详情
+'You do not have the right to change issue details.': 你无权修改议题详情
+'Publication date<BR><SMALL>(yyyy-mm-dd)</SMALL>': null
+'Front Page Template': null
+'You do not have the right to delete issues.': 您无权删除议题
+'Are you sure you want to delete the issue $1?': 你确认删除议题$1
+'Use the structure of the previous issue': 用以前议题的结构
+'Copy the entire structure in all languages from the previous issue except for content.': 除内容外，复制所有语言先前议题的完整结构
+'You may modify it later if you wish.': 如果您愿意，可以以后再修改
+'Create a new structure': 创建新结构
+'Create a complete new structure.': 创建全新的结构
+'You must define an issue type for each language and then sections for them.': 你必须为每种语言定义一个议题，然后是区
+'Copy previous issue': 复制以前的议题
+'No previous issue.': 无以前的议题
+'Copy structure from issue number $1': 从$1议题复制结构
+'Delete entry': null
+'Issue Publishing Schedule': null
+'Invalid Input: $1': null
+'Issue Number': null
+'Go To Sections': null
+'There was an error reading the language parameter.': null
+'There was an error reading the publication parameter.': null
+'There was an error reading the issue parameter.': null
+'There was an error scheduling the $1 action on $2': null
+'The action scheduled on $1 could not be deleted.': null
+'Click to open': null

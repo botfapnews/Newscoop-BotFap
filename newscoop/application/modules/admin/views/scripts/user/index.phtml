@@ -1,0 +1,287 @@
+<?php 
+$translator = \Zend_Registry::get('container')->getService('translator');
+$this->placeholder('title')->captureStart(); 
+?>
+<?php echo $translator->trans('Users'); ?>
+<?php $this->placeholder('title')->captureEnd(); ?>
+<?php echo $this->renderActions(); ?>
+<table cellpadding="0" cellspacing="0" border="0" class="display" id="userDataTable" style="max-width:1300px">
+    <thead>
+        <tr>
+            <th rowspan="2"><?php echo $translator->trans('Username', array(), 'users'); ?></th>
+            <th rowspan="2"><?php echo $translator->trans('First Name', array(), 'users'); ?></th>
+            <th rowspan="2"><?php echo $translator->trans('Last Name', array(), 'users'); ?></th>
+            <th rowspan="2"><?php echo $translator->trans('Email', array(), 'users'); ?></th>
+            <th></th>
+            <th></th>
+            <th rowspan="2"><?php echo $translator->trans('Created', array(), 'articles'); ?></th>
+            <th rowspan="2"><?php echo $translator->trans('Updated'); ?></th>
+            <th></th>
+            <th rowspan="2"><?php echo $translator->trans('Options'); ?></th>
+        </tr>
+        <tr>
+            <th><?php echo $translator->trans('User Type', array(), 'users'); ?></th>
+            <th><?php echo $translator->trans('Status'); ?></th>
+            <th><?php echo $translator->trans('Verified'); ?></th>
+        </tr>
+    </thead>
+    <tbody>
+        
+    </tbody>
+    <tfoot>
+        <tr>
+            <th><?php echo $translator->trans('Username', array(), 'users'); ?></th>
+            <th><?php echo $translator->trans('First Name', array(), 'users'); ?></th>
+            <th><?php echo $translator->trans('Last Name', array(), 'users'); ?></th>
+            <th><?php echo $translator->trans('Email', array(), 'users'); ?></th>
+            <th><?php echo $translator->trans('User Type'); ?></th>
+            <th><?php echo $translator->trans('Status'); ?></th>
+            <th><?php echo $translator->trans('Created'); ?></th>
+            <th><?php echo $translator->trans('Updated'); ?></th>
+            <th><?php echo $translator->trans('Verified'); ?></th>
+            <th><?php echo $translator->trans('Options'); ?></th>
+        </tr>
+    </tfoot>
+</table>
+
+<script type="text/html" id="user-active-template">
+<div class="inline-actions">
+    <a href="#delete" class="delete" title="<?php echo $translator->trans('delete user', array(), 'users'); ?> <%= user.escape('username') %>"><?php echo $translator->trans('Delete'); ?></a>
+</div>
+<a href="<%= user.getLink('edit') %>" class="edit" title="<?php echo $translator->trans('edit user', array(), 'users'); ?> <%= user.escape('username') %>"><%= user.escape('username') %>
+<% if (user.get('is_verified')) { %><abbr title="<?php echo $translator->trans('Verified profile', array(), 'users'); ?>" class="verified">V</abbr><% } %>
+</a>
+<a href="mailto:<%= user.get('email') %>" class="mailto" title="<?php echo $translator->trans('Send email to user:', array(), 'users'); ?> <%= user.escape('username') %>"><%= user.get('email') %></a>
+<span class="created"><%= user.get('created') %></span>
+</script>
+
+<script type="text/html" id="user-inactive-template">
+<div class="inline-actions">
+    <a href="#token" class="token" title="<?php echo $translator->trans('send confirmation email', array(), 'users'); ?>"><?php echo $translator->trans('Send confirm email', array(), 'users'); ?></a> |
+    <a href="#delete" class="delete" title="<?php echo $translator->trans('delete user', array(), 'users'); ?> <%= user.escape('username') %>"><?php echo $translator->trans('Delete'); ?></a>
+</div>
+<a class="edit"><%= user.escape('username') %></a>
+<span class="agent"><abbr title="<%= user.escape('http_user_agent') %>"><%= user.get('http_user_agent') %></abbr></span>
+<a href="mailto:<%= user.get('email') %>" class="mailto"><%= user.get('email') %></a>
+<span class="created"><%= user.get('created') %></span>
+</script>
+
+<script type="text/html" id="user-deleted-template">
+<a class="edit" href="<%= user.getLink('rename') %>"><%= user.escape('username') %></a>
+<a class="mailto">&nbsp;</a>
+<span class="created"><%= user.get('created') %> - <%= user.get('updated') %></span>
+</script>
+
+<script type="text/javascript" src="<?php echo $this->baseUrl('js/underscore.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo $this->baseUrl('js/backbone.js'); ?>"></script>
+<script type="text/javascript">
+(function($) {
+/*
+ * Function: fnGetColumnData
+ * Purpose:  Return an array of table values from a particular column.
+ * Returns:  array string: 1d data array 
+ * Inputs:   object:oSettings - dataTable settings object. This is always the last argument past to the function
+ *           int:iColumn - the id of the column to extract the data from
+ *           bool:bUnique - optional - if set to false duplicated values are not filtered out
+ *           bool:bFiltered - optional - if set to false all the table data is used (not only the filtered)
+ *           bool:bIgnoreEmpty - optional - if set to false empty values are not filtered from the result array
+ * Author:   Benedikt Forchhammer <b.forchhammer /AT\ mind2.de>
+ */
+$.fn.dataTableExt.oApi.fnGetColumnData = function ( oSettings, iColumn, bUnique, bFiltered, bIgnoreEmpty ) {
+    // check that we have a column id
+    if ( typeof iColumn == "undefined" ) return new Array();
+    
+    // by default we only wany unique data
+    if ( typeof bUnique == "undefined" ) bUnique = true;
+    
+    // by default we do want to only look at filtered data
+    if ( typeof bFiltered == "undefined" ) bFiltered = true;
+    
+    // by default we do not wany to include empty values
+    if ( typeof bIgnoreEmpty == "undefined" ) bIgnoreEmpty = true;
+    
+    // list of rows which we're going to loop through
+    var aiRows;
+    
+    // use only filtered rows
+    if (bFiltered == true) aiRows = oSettings.aiDisplay; 
+    // use all rows
+    else aiRows = oSettings.aiDisplayMaster; // all row numbers
+
+    // set up data array    
+    var asResultData = new Array();
+    
+    for (var i=0,c=aiRows.length; i<c; i++) {
+        iRow = aiRows[i];
+        var aData = this.fnGetData(iRow);
+        var sValue = aData[iColumn];
+        
+        // ignore empty values?
+        if (bIgnoreEmpty == true && sValue.length == 0) continue;
+
+        // ignore unique values?
+        else if (bUnique == true && jQuery.inArray(sValue, asResultData) > -1) continue;
+        
+        // else push the value onto the result data array
+        else asResultData.push(sValue);
+    }
+    
+    return asResultData;
+}}(jQuery));
+
+
+function fnCreateSelect( aData )
+{
+    var r='<select><option value="">Show All</option>', i, iLen=aData.length;
+    for ( i=0 ; i<iLen ; i++ )
+    {
+        r += '<option value="'+aData[i]+'">'+aData[i]+'</option>';
+    }
+    return r+'</select>';
+}
+
+$(function() {
+    window.translate = <?php echo json_encode(array(
+        'No users found.' => $translator->trans('No users found.', array(), 'users'),
+        'Are you sure you want to {action}?' => $translator->trans('Are you sure you want to {action}?', array(), 'users'),
+        'New confirmation email was sent to user.' => $translator->trans('New confirmation email was sent to user.', array(), 'users'),
+        'User was deleted.' => $translator->trans('User was deleted.', array(), 'users'),
+    )); ?>;
+
+    $('#userDataTable').hide(); // hide the table so it doesn't look jaggy
+    var oTable = $('#userDataTable').dataTable( {
+        'oLanguage': {
+            'oPaginate': {
+                'sNext': '<?php echo $translator->trans('Next'); ?>',
+                'sLast': '<?php echo $translator->trans('Last', array(), 'api'); ?>',
+                'sPrevious': '<?php echo $translator->trans('Previous'); ?>',
+                'sFirst': '<?php echo $translator->trans('First', array(), 'api'); ?>'
+            },
+            'sZeroRecords': '<?php echo $translator->trans('No records found.', array(), 'users'); ?>',
+            'sSearch': '<?php echo $translator->trans('Search'); ?>:',
+            'sInfo': '<?php echo $translator->trans('Showing _START_ to _END_ of _TOTAL_ entries', array(), 'users'); ?>',
+            'sEmpty': '<?php echo $translator->trans('No entries to show', array(), 'users'); ?>',
+            'sInfoFiltered': '<?php echo $translator->trans(' - filtering from _MAX_ records', array(), 'users'); ?>',
+            'sLengthMenu': '<?php echo $translator->trans('Display _MENU_ records', array(), 'users'); ?>',
+            'sInfoEmpty': '',
+        },
+        // "bServerSide": true,
+        "bProcessing": true,
+        "bAutoWidth": true,
+        "sPaginationType": "full_numbers",
+        "bPaging": true,
+        // ***
+        // * This requires 1.9.0 as minimium
+        // * This allows for styling (or something similar) based on COLUMN content.
+        // ***
+        // "aoColumnDefs": [ {
+        //   "aTargets": [4],
+        //   "fnCreatedCell": function (nTd, sData, oData, iRow, iCol) {
+        //     if (typeof sData == 'string') {
+        //         if ( sData.indexOf("Admin") !== -1) {
+        //           $(nTd).parent().css('font-weight', 'bold');
+        //         }
+        //     }
+        //   }
+        // } ],
+        'bJQueryUI': true,
+        "sDom": 'RCf<"clear">rtilp',
+        "oColVis": {
+            "aiExclude": [ 0 ]
+        },
+        "sAjaxSource": <?php echo json_encode($this->url(array('action' => 'table', 'format' => 'json'))); ?>,
+        "fnServerData": function ( sSource, aoData, fnCallback ) {
+            $.getJSON( sSource, aoData, function (json) { 
+                var aaData = [];
+                var totalRecords = json['users'].length;
+                json['users'].forEach(function(user) {
+                    var newUser = [];
+                    for (var key in user) {
+                        if (key != 'id') {
+                            var string = user[key];
+                            if (key == 'u') {
+                                string = '<a href="user/edit/user/'+user['id']+'">'+ user['u'] + '</a>';
+                            }
+                            if (key == 'g') {
+                                string = user[key].join(' / ');
+                            }
+                            if (key == 'e') {
+                                string = '<a href="mailto:'+user['e']+'">'+user['e']+'</a>';
+                            }
+                            newUser.push(string);
+                            if (key == 've') {
+                                var optionsUrl = '<a class="jsonDelete" href="user/delete/user/'+user['id']+'"><?php echo $translator->trans('Delete'); ?></a>, <a href="user/rename/user/'+user['id']+'"><?php echo $translator->trans('users.table.actions.rename', array(), 'users'); ?></a>';
+                                if (user['ve'] == 'No') {
+                                    optionsUrl += ', <a class="jsonConfirm" href="user/send-confirm-email/user/'+user['id']+'"><?php echo $translator->trans('Confirm'); ?></a>';
+                                }
+                                newUser.push(optionsUrl);
+                            }
+                        }
+                    }
+                    aaData.push(newUser);
+                });
+                var newData = [];
+                newData.aaData = aaData;
+                newData.iTotalRecords = totalRecords;
+                fnCallback(newData);
+                setTimeout( function () {
+                    $("thead th").each( function ( i ) {
+                        if (i == 4) {
+                            var columnData = oTable.fnGetColumnData(i);
+                            var xArr = [];
+                            columnData.forEach(function(x) {
+                                x.split(' / ').forEach(function (xRole) {
+                                    if ($.inArray(xRole, xArr) === -1) {
+                                        xArr.push(xRole);
+                                    }
+                                });
+                            });
+                            this.innerHTML = fnCreateSelect( xArr );
+                        } else if (i == 5 || i == 8) {
+                            this.innerHTML = fnCreateSelect( oTable.fnGetColumnData(i) );
+                        }
+                        $('select', this).change( function () {
+                            oTable.fnFilter( $(this).val() , i, false, false, false, false );
+                        } );
+                    } );
+                    oTable.fnFilter( 'Active' , 5, false, false, false, false );
+                    oTable.fnSetColumnVis( 5, false );
+                    oTable.fnSetColumnVis( 6, false );
+                    oTable.fnSetColumnVis( 7, false );
+                    oTable.fnSetColumnVis( 8, false );
+                    $('#userDataTable').show();
+                }, 0 );
+            });
+        }
+    } );
+});
+
+$(document).ready(function(){
+    $('#userDataTable .jsonDelete').live('click', function(event){
+        var dataTableCell = $(this).parent();
+        var dataTableRow = dataTableCell.parent().get(0);
+        event.preventDefault();
+        $.getJSON($(this).attr('href'), {'format': 'json'}, function(data, textStatus, jqXHR) {
+            if (data.message) {
+                flashMessage(data.message, 'error');
+                return false;
+            }
+
+            $('#userDataTable').dataTable().fnUpdate( "Deleted", dataTableRow, 5 );
+            flashMessage(window.translate['User was deleted.']);
+        });
+    });
+
+    $('#userDataTable .jsonConfirm').live('click', function(event){
+        event.preventDefault();
+        $.getJSON($(this).attr('href'), {'format': 'json'}, function(data, textStatus, jqXHR) {
+            if (data.message) {
+                flashMessage(data.message, 'error');
+                return false;
+            }
+
+            flashMessage(window.translate['New confirmation email was sent to user.']);
+        });
+    });
+});
+</script>

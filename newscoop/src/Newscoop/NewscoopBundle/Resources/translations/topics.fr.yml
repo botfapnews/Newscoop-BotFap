@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': null
+'Delete anyway': null
+'Reset order': null
+'Order changes will be lost. Are you sure you want to continue?': null
+'Topics order saved.': null
+'Show languages': null
+'Save order': null
+'Click to edit': null
+'Add root topic': null
+'Topic was deleted.': null
+'The topic name is already in use by another topic.': null
+'You must enter a name for the topic.': 'Vous devez entrer un nom pour le sujet. '
+'You must choose a language for the topic.': 'Vous devez choisir une langue pour le sujet. '
+'This topic has subtopics, therefore it cannot be deleted.': 'Ce sujet a des sous-sujets, donc il ne peut pas être supprimé. '
+'Add translation:': 'Ajouter traduction:'
+'Add subtopic:': 'Ajouter sous-sujet:'
+Top: Haut
+'You do not have the right to add topics.': 'Vous navez pas le droit dajouter des sujets. '
+'You do not have the right to delete topics.': 'Vous navez pas le droit de supprimer des sujets. '
+'Are you sure you want to delete the topic $1?': 'êtes-vous sûrs que vous voulez supprimer le sujet $1 ? '
+'You do not have the right to change topic name.': 'Vous navez pas le droit de changer de nom de sujet.'
+'The topic $1 could not be deleted.': 'Le sujet $1 ne pouvait pas être supprimé.'
+'Adding new topic': 'Ajout nouveau sujet'
+'Deleting topic': 'Suppression sujet'
+'Change topic name': 'changer nom de sujet'
+'There are $1 articles using the topic.': 'Il y a $1 articles employant le sujet.'
+'Search for topics': null
+topics:
+    tip: null
+    label:
+        all: null
+        filterbylang: null
+        search: null
+        filterplaceholder: null
+        addroot: null
+        topicname: null
+        expandcollapse: null
+        changename: null
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: null
+    btn:
+        hide: null
+        remove: null
+        edit: null
+        close: null
+        add: null
+        save: null
+        saveandclose: null
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: null
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null

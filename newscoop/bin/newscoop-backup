@@ -1,0 +1,250 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Filesystem\Exception\IOException;
+use Symfony\Component\Filesystem\Filesystem;
+use Newscoop\Services\FilesystemService;
+
+require_once dirname(__FILE__) . '/newscoop_bootstrap.php';
+
+if (empty($GLOBALS['argv']) && empty($options)) {
+	echo "\n";
+	echo "Can't read command line arguments\n";
+	echo "\n";
+	exit(1);
+}
+
+$ETC_DIR = $CAMPSITE_DIR . '/conf';
+
+require_once("cli_script_lib.php");
+
+if (!FilesystemService::isReadable("$ETC_DIR/install_conf.php")) {
+	exit(1);
+}
+
+// include install_conf.php file
+require_once("$ETC_DIR/install_conf.php");
+
+if (empty($options)) {
+    $flush = false;
+} else {
+    $GLOBALS['argv'] = $options;
+    $flush = true;
+}
+$help = false;
+$silent = false;
+$default_dir = false;
+$skip_static = false;
+for ($i = 0; ; $i++) {
+	if (!isset($GLOBALS['argv'][$i])) {
+		break;
+	}
+	$arg = trim($GLOBALS['argv'][$i]);
+    $help |= ($arg == "--help");
+	$silent |= ($arg == "--silent");
+	$default_dir |= ($arg == "--default-dir");
+	$skip_static |= ($arg == "--skip-static");
+}
+
+if (!$silent) {
+	echo "\n";
+	echo "Newscoop Backup Utility\n";
+	echo "-----------------------\n";
+	flush_output($flush);
+}
+
+$usage =
+"  Usage:
+  newscoop-backup [--silent] [--default-dir]
+
+  This script will backup all of your website data needed to re-create
+  your site from scratch, except for the Newscoop software itself.
+  Later, if you want to restore from a backup file, use the script
+  'newscoop-restore'.
+
+  Parameters:
+    --help
+        Show this help and exit.
+
+    --silent
+        Don't display any messages on success.
+
+    --default-dir:
+        Save the backup archive in the backup default directory:
+            $CAMPSITE_DIR/backup/
+        By default the backup file is saved in the current directory.
+
+    --skip-static
+        Don't backup any static files (images/files/pdf/etc).
+
+  See also:
+      newscoop-restore
+
+";
+
+if (empty($ETC_DIR) || $help == true) {
+	echo $usage;
+	exit(1);
+}
+
+if (!is_file("$ETC_DIR/database_conf.php")) {
+	echo "\n";
+	echo "Database configuration file is missing!\n";
+	echo "\n";
+	exit(1);
+}
+require_once("$ETC_DIR/database_conf.php");
+$html_dir = $CAMPSITE_DIR;
+
+$timestampStr = date("Y-m-d-H-i-s");
+$backupDirName = 'backup-newscoop-'.$timestampStr;
+
+if ($default_dir) {
+	$adviceOnError = "Please run this script as '".$Campsite['APACHE_USER']."' or as 'root'.";
+	$backupDirFullPath = $CAMPSITE_DIR . "/backup/$backupDirName";
+	camp_exec_command("mkdir -p " . escapeshellarg($backupDirFullPath),
+				 "Unable to create the default backup directory.\n$adviceOnError", !$silent);
+} else {
+	$adviceOnError = "You may not have the right to write to the current directory.\n"
+					. "Please set the current directory to a location where you have\n"
+					. "the right to write.";
+	$backupDirFullPath = getcwd()."/".$backupDirName;
+}
+
+if (!$silent) {
+	echo "Backup script version: ".$Campsite["VERSION"]."\n";
+	echo "Backing up newscoop\n";
+	flush_output($flush);
+}
+
+if (!file_exists($backupDirFullPath)) {
+  try {
+    $filesystem = new Filesystem();
+    $filesystem->mkdir($backupDirFullPath);
+  } catch(IOException $e) {
+    throw new IOException($adviceOnError);
+  }
+}
+
+$tmpVersion = preg_split('/ /', $Campsite["VERSION"]);
+$tmpVersion = $tmpVersion[0];
+$cmd = "touch $backupDirFullPath/BACKUP-VERSION-$tmpVersion";
+camp_exec_command($cmd, "Couldn't write VERSION file.");
+
+// backup the database
+if (!$silent) {
+	$free_space = disk_free_space($backupDirFullPath);
+	echo '
+Available disk space is <b>' . camp_readable_size($free_space) . '.</b>
+The actual necessary space depends mostly on size of your database and multimedia files.
+If the backup does not succeed, try to create more free space, please.
+
+';
+	echo " * Backing up the database...";
+
+	flush_output($flush);
+}
+
+$db_file_name = "$backupDirFullPath/".$Campsite['DATABASE_NAME'].'-database.sql';
+
+if (is_file($db_file_name) && (camp_backup_file($db_file_name, $output) != 0)) {
+	// remove the abandoned dir, but the error string shall be on the original issue
+	camp_remove_dir($backupDirFullPath, "");
+	camp_exit_with_error($silent ? "" : array("Unable to create temporary archive.", $adviceOnError));
+}
+if ( ( $error = camp_backup_database($Campsite['DATABASE_NAME'], $db_file_name, $output) ) !== 0) {
+	// remove the abandoned dir, but the error string shall be on the original issue
+	camp_remove_dir($backupDirFullPath, "");
+	camp_exit_with_error($silent ? "" : array("Unable to create temporary archive.", $error));
+}
+if (!$silent) {
+	echo "done.\n";
+}
+
+if (!$silent) {
+	echo " * Backing up the themes...";
+	flush_output($flush);
+}
+camp_copy_files("$html_dir/themes", $backupDirFullPath);
+if (!$silent) {
+	echo "done.\n";
+}
+
+if (!$skip_static) {
+	if (!$silent) {
+		echo " * Backing up images...";
+		flush_output($flush);
+	}
+	camp_copy_files("$html_dir/images", $backupDirFullPath, "Unable to copy file/dir $html_dir/images to $backupDirFullPath. Please create the folder images/ or use the --skip-static option.");
+	if (!$silent) {
+		echo "done.\n";
+	}
+
+	if (!$silent) {
+		echo " * Backing up file attachments...";
+		flush_output($flush);
+	}
+
+	camp_copy_files("$html_dir/public/files", $backupDirFullPath, "Unable to copy file/dir $html_dir/public/file to $backupDirFullPath. Please create the folder public/files/ or use the --skip-static option.");
+	if (!$silent) {
+		echo "done.\n";
+	}
+
+	if (!$silent) {
+	    echo " * Backing up videos...";
+	    flush_output($flush);
+	}
+
+	camp_copy_files("$html_dir/public/videos", $backupDirFullPath, "Unable to copy file/dir $html_dir/public/video to $backupDirFullPath. Please create the folder public/video/ or use the --skip-static option.");
+	if (!$silent) {
+	    echo "done.\n";
+	}
+
+	if (!$silent) {
+	    echo " * Backing up PDFs...";
+	    flush_output($flush);
+	}
+	camp_copy_files("$html_dir/public/pdf", $backupDirFullPath, "Unable to copy file/dir $html_dir/public/pdf to $backupDirFullPath. Please create the folder public/pdf/ or use the --skip-static option.");
+	if (!$silent) {
+	    echo "done.\n";
+	}
+}
+
+if (!$silent) {
+	echo " * Backing up configuration files...";
+	flush_output($flush);
+}
+
+camp_copy_files("$ETC_DIR", $backupDirFullPath);
+if (!$silent) {
+	echo "done.\n";
+}
+
+if (!$silent) {
+	echo " * Creating tarball...";
+	flush_output($flush);
+}
+
+if (camp_archive_file($backupDirFullPath, dirname($backupDirFullPath), $backupDirName, $output) != 0) {
+	echo "\n" . implode("\n", $output) . "\n";
+	// remove the abandoned dir, but the error string shall be on the original issue
+	camp_remove_dir($backupDirFullPath, "");
+	camp_exit_with_error($silent ? "" : array("Unable to create temporary archive.", $adviceOnError));
+}
+
+if (!$silent) {
+	echo "done.\n";
+}
+
+if (!$silent) {
+	echo " * Cleaning up...";
+	flush_output($flush);
+}
+camp_remove_dir($backupDirFullPath, "Unable to remove temporary directory $backupDirFullPath");
+if (!$silent) {
+	echo "done.\n";
+}
+
+if (!$silent) {
+	echo "\nBackup saved to file:\n  $backupDirFullPath.tar.gz\n\n";
+}

@@ -1,0 +1,224 @@
+services:
+    doctrine.em:
+        alias: doctrine.orm.default_entity_manager
+    em:
+        alias: doctrine.em
+    dispatcher:
+        alias: event_dispatcher
+    doctrine.event_manager:
+        class:      Doctrine\Common\EventManager
+        factory_service:  doctrine.em
+        factory_method:   getEventManager
+    doctrine.connection:
+        class: Doctrine\DBAL\Connection
+        factory_service: doctrine.em
+        factory_method: getConnection
+    doctrine.adodb:
+        class:      Newscoop\Doctrine\AdoDbAdapter
+        arguments:  ["@doctrine.connection"]
+    image:
+        class:      Newscoop\Image\ImageService
+        arguments:  ["%image%", "@em", '@newscoop.cache']
+    attachment:
+        class:      Newscoop\Services\AttachmentService
+        arguments:  ["%attachment%", "@em", "@router", "@user"]
+    zend_auth:
+        class:      Zend_Auth
+        factory_class: Zend_Auth
+        factory_method: getInstance
+    user:
+        class:      Newscoop\Services\UserService
+        arguments:  ["@em", "@zend_auth", "@security.context"]
+        tags:
+            - { name: kernel.event_listener, event: user.set_points, method: updateUserPoints }
+    user.manager:
+        class:      Newscoop\User\UserManager
+        arguments:  ["@em"]
+    user.list:
+        class:      Newscoop\Services\ListUserService
+        arguments:  ["%blog%", "@em"]
+    user.token:
+        class:      Newscoop\Services\UserTokenService
+        arguments:  ["@em"]
+    user_type:
+        class:      Newscoop\Services\UserTypeService
+        arguments:  ["@em"]
+    author:
+        class:      Newscoop\Services\AuthorService
+        arguments:  ["@em"]
+    audit.maintenance:
+        class:      Newscoop\Services\AuditMaintenanceService
+        arguments:  ["@em"]
+    user.topic:
+        class:      Newscoop\Services\UserTopicService
+        arguments:  ["@em", "@event_dispatcher"]
+    auth.adapter:
+        class:      Newscoop\Services\Auth\DoctrineAuthService
+        arguments:  ["@em"]
+    auth.adapter.social:
+        class:      Newscoop\Services\Auth\SocialAuthService
+        arguments:  ["@em"]
+    article.link:
+        class:      Newscoop\Article\LinkService
+        arguments:  ["@em", "@zend_router", "@router"]
+    related_articles:
+        class:      Newscoop\Services\RelatedArticlesService
+        arguments:  ["@em"]
+    playlists:
+        class:      Newscoop\Services\PlaylistsService
+        arguments:  ["@em", "@dispatcher", "@newscoop.cache"]
+    article.repository:
+        class:      Doctrine\Common\Persistence\ObjectRepository
+        factory_service: doctrine
+        factory_method: getRepository
+        arguments:  ["\\Newscoop\\Entity\\Article"]
+    comment.repository:
+        class:      Doctrine\Common\Persistence\ObjectRepository
+        factory_service: doctrine
+        factory_method: getRepository
+        arguments:  ["\\Newscoop\\Entity\\Comment"]
+    email:
+        class:      Newscoop\Services\EmailService
+        arguments:  ["@service_container"]
+    blog:
+        class:      Newscoop\Services\BlogService
+        arguments:  ["%blog%", "@em"]
+    user.search:
+        class:      Newscoop\Services\UserSearchService
+        arguments:  ["@em"]
+    user.repository:
+        class:      Doctrine\Common\Persistence\ObjectRepository
+        factory_service: doctrine
+        factory_method: getRepository
+        arguments:  ["\\Newscoop\\Entity\\User"]
+    content.publication:
+        class:      Newscoop\Content\PublicationService
+        arguments:  ["@em"]
+    content.section:
+        class:      Newscoop\Content\SectionService
+        arguments:  ["@em"]
+    content.type:
+        class:      Newscoop\Content\ContentTypeService
+        arguments:  ["@em"]
+    stat:
+        class:      Newscoop\Services\StatService
+        arguments:  ["@em"]
+    view:
+        class:      Newscoop\View\ViewFactory
+        factory_class:  Newscoop\View\ViewFactory
+        factory_method:   getView
+    view.helper.thumbnail:
+        class:      Newscoop\Image\ThumbnailViewHelper
+        arguments:  ["@image"]
+    view.helper.rendition:
+        class:      Newscoop\Image\RenditionViewHelper
+        arguments:  ["@image"]
+    image.rendition:
+        class:      Newscoop\Image\RenditionService
+        arguments:  ["@em", "@image"]
+    image.search:
+        class:      Newscoop\Image\ImageSearchService
+        arguments:  ["@em"]
+    package:
+        class:      Newscoop\Package\PackageService
+        arguments:  ["@em", "@image"]
+    package.search:
+        class:      Newscoop\Package\PackageSearchService
+        arguments:  ["@em"]
+    zend_router:
+        class:      Newscoop\Router\RouterFactory
+        factory_class:  Newscoop\Router\RouterFactory
+        factory_method: initRouter
+        arguments:  ["@service_container"]
+    subscription:
+        class:      Newscoop\Subscription\SubscriptionFacade
+        arguments:  ["@em"]
+    subscription.section:
+        class:      Newscoop\Subscription\SectionFacade
+        arguments:  ["@em"]
+    subscription.ip:
+        class:      Newscoop\Subscription\IpFacade
+        arguments:  ["@em"]
+    subscription.service:
+        class:      %subscriptions.service.class%
+        arguments:  ["@em"]
+    random:
+        class:      Newscoop\Random
+    webcode:
+        class:      Newscoop\WebcodeFacade
+        arguments:  ["@em", "@random"]
+    storage.adapter:
+        class:      Zend_Cloud_StorageService_Adapter_FileSystem
+        arguments:  ["%storage%"]
+    storage:
+        class:      Newscoop\Storage\StorageService
+        arguments:  ["@storage.adapter"]
+    image.update_storage:
+        class:      Newscoop\Image\UpdateStorageService
+        arguments:  ["@em", "@storage"]
+    notification:
+        class:      Newscoop\Services\NotificationService
+        arguments:  ["@em"]
+    topic:
+        alias: newscoop_newscoop.topic_service
+    index_client.default:
+        class: Newscoop\Search\DefaultIndexClient
+        arguments: ["@service_container"]
+    indexer.article:
+        class: Newscoop\Search\Indexer
+        arguments: ["@service_container", "@search.article", "@article.repository", "indexer.article"]
+    indexer.comment:
+        class: Newscoop\Search\Indexer
+        arguments: ["@service_container", "@search.comment", "@comment.repository", "indexer.comment"]
+    indexer.user:
+        class: Newscoop\Search\Indexer
+        arguments: ["@service_container", "@search.user", "@user.repository", "indexer.user"]
+    search.article:
+        class: Newscoop\Article\SearchService
+        arguments: ["@webcode", "@image.rendition", "@article.link", "@em"]
+    search.comment:
+        class: Newscoop\Comment\SearchService
+        arguments: ["@article.link", "@em"]
+    search.user:
+        class: Newscoop\User\SearchService
+        arguments: ["@image"]
+    preferences:
+        class: Newscoop\NewscoopBundle\Services\SystemPreferencesService
+        arguments: ["@em"]
+    newscoop.plugins.manager:
+        class: Newscoop\Services\Plugins\ManagerService
+        arguments: ["@em", "@event_dispatcher", "@newscoop.plugins.service", "@logger", "%plugins%"]
+    newscoop.plugins.service:
+        class: Newscoop\Services\Plugins\PluginsService
+        arguments: ["@dispatcher", "@em"]
+    newscoop.templates.service:
+        class: Newscoop\Services\TemplatesService
+        arguments: ["@newscoop_newscoop.themes_service", "@newscoop.publication_service"]
+    newscoop.placeholders.service:
+        class: Newscoop\Services\PlaceholdersService
+    newscoop.listpaginator.service:
+        class: Newscoop\Services\ListPaginatorService
+    newscoop.cache:
+        class: Newscoop\Services\CacheService
+        arguments: ["@system_preferences_service"]
+    newscoop.input_manipulator:
+        class: Newscoop\Services\InputManipulator
+    user.garbage:
+        class: Newscoop\Services\GarbageCollectionService
+        arguments: ["@em"]
+    newscoop.filesystem:
+        class: Newscoop\Services\FilesystemService
+        arguments: ["@em"]
+    newscoop.scheduler:
+        class: Newscoop\Services\SchedulerService
+        arguments: ["@em", "%scheduler%"]
+    newscoop.editor:
+        class: Newscoop\Services\EditorService
+        arguments: ["@dispatcher", "@em"]
+
+    # Add this event listener registering to newscoop/application/configs/parameters/custom_parameters.yml
+    # search_indexer:
+    #     class:      Newscoop\Search\ArticleIndexer
+    #     arguments:  ["@em", "@search.index"]
+    #     tags:
+    #         -  { name: kernel.event_listener, event: article.delete, method: update }

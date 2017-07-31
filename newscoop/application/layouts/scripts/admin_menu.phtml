@@ -1,0 +1,44 @@
+<?php 
+    $menuItem = \Zend_Registry::get('container')->get('knp_menu.menu_provider')->get('main');
+    $breadcrumbsMenu = \Zend_Registry::get('container')->get('knp_menu.menu_provider')->get('breadcrumb');
+    $menuRenderer = \Zend_Registry::get('container')->get('knp_menu.renderer.list');
+    $manipulator = new \Knp\Menu\Util\MenuManipulator();
+    $breadcrumbsMenuArray =  $manipulator->getBreadcrumbsArray($breadcrumbsMenu);
+?>
+
+
+<div class="main-menu-bar">
+    <div class="logo"></div>
+<?php 
+    echo $menuRenderer->render($menuItem, array('class' => 'navigation'));
+?>
+</div>
+
+<?php if (isset($this) && !$this->legacy) { ?>
+    <?php if (count($breadcrumbsMenuArray) > 1) {?>
+    <div class="breadcrumb-bar clearfix">
+        <ul class="breadcrumbs clearfix">
+        <?php
+            $i = 0;
+            foreach( $breadcrumbsMenuArray as $key => $menu) {
+                if ($menu['label'] != 'root') {
+                    if($i != count($breadcrumbsMenuArray)-1) {
+                        echo '<li class="separator"><a href="'.$menu['uri'].'">'.$menu['label'].'</a></li>';
+                    } else {
+                        echo '<li class="separator">'.$menu['label'].'</li>';
+                    }
+                }
+                $i++;
+            }
+        ?>
+        </ul>
+    </div>
+    <?php } ?>
+<?php } ?>
+
+
+<script>
+$(document).ready(function() {
+    $('#menu-stat').fancybox();
+});
+</script>

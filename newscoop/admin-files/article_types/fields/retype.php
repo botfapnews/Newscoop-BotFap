@@ -1,0 +1,121 @@
+<?php
+require_once($GLOBALS['g_campsiteDir'].'/classes/Input.php');
+require_once($GLOBALS['g_campsiteDir'].'/classes/ArticleType.php');
+
+$translator = \Zend_Registry::get('container')->getService('translator');
+
+// Check permissions
+if (!$g_user->hasPermission('ManageArticleTypes')) {
+    camp_html_display_error($translator->trans("You do not have the right to reassign a field type.", array(), 'article_type_fields'));
+    exit;
+}
+
+$articleTypeName = Input::Get('f_article_type');
+$articleTypeFieldName = Input::Get('f_field_name');
+$articleField = new ArticleTypeField($articleTypeName, $articleTypeFieldName);
+
+$crumbs = array();
+$crumbs[] = array($translator->trans('Configure'), "");
+$crumbs[] = array($translator->trans('Article Types'), "/$ADMIN/article_types/");
+$crumbs[] = array($articleTypeName, '');
+$crumbs[] = array($translator->trans("Article type fields", array(), 'article_type_fields'), "/$ADMIN/article_types/fields/?f_article_type=".urlencode($articleTypeName));
+$crumbs[] = array($translator->trans("Reassign a field type", array(), 'article_type_fields'), "");
+
+echo camp_html_breadcrumbs($crumbs);
+include_once($GLOBALS['g_campsiteDir']."/$ADMIN_DIR/javascript_common.php");
+
+$lang = camp_session_get('LoginLanguageId', 1);
+$languageObj = new Language($lang);
+
+// Verify the merge rules
+$options = array();
+$convertibleFromTypes = $articleField->getConvertibleToTypes();
+foreach ($convertibleFromTypes as $type) {
+    $options[$type] = ArticleTypeField::VerboseTypeName($type, $languageObj->getLanguageId());
+}
+?>
+<script>
+function UpdateArticleFieldContext()
+{
+    var my_form = document.forms["add_field_form"]
+    var field_type = my_form.elements["f_article_field_type"].value
+    var is_topic = my_form.elements["is_topic"].value
+    if ((is_topic == "false" && field_type == "topic")
+            || (is_topic == "true" && field_type != "topic")) {
+        ToggleRowVisibility('topic_list')
+        ToggleBoolValue('is_topic')
+    }
+}
+</script>
+
+<?php if (count($options) < 1) { ?>
+<P>
+You cannot reassign this type.
+</P>
+<?php camp_html_copyright_notice(); ?>
+<?php } else { ?>
+
+<P>
+<FORM NAME="add_field_form" METHOD="POST" ACTION="/<?php echo $ADMIN; ?>/article_types/fields/do_retype.php" onsubmit="return <?php camp_html_fvalidate(); ?>;">
+<?php echo SecurityToken::FormParameter(); ?>
+<input type="hidden" name="f_field_name" value="<?php print $articleTypeFieldName; ?>">
+<input type="hidden" name="is_topic" id="is_topic" value="false">
+<TABLE BORDER="" CELLSPACING="0" CELLPADDING="0" CLASS="box_table">
+<TR>
+    <TD ALIGN="RIGHT" ><?php  echo $translator->trans("Type"); ?>:</TD>
+    <TD>
+    <SELECT NAME="f_article_field_type" class="input_select" onchange="UpdateArticleFieldContext()">
+        <?php foreach ($options as $k => $v) { ?>
+            <OPTION VALUE="<?php print $k; ?>"><?php echo $v; ?></OPTION>
+        <?php } ?>
+    </SELECT>
+
+    </TD>
+</TR>
+<tr style="display: none;" id="topic_list">
+    <td align="right"><?php echo $translator->trans("Top element", array(), 'article_type_fields'); ?>:</td>
+    <td>
+        <select name="f_root_topic_id" class="input_select">
+<?php
+$TOL_Language = camp_session_get('LoginLanguageId', 1);
+$lang = new Language($TOL_Language);
+$em = \Zend_Registry::get('container')->getService('em');
+$cacheService = \Zend_Registry::get('container')->getService('newscoop.cache');
+$topicService = \Zend_Registry::get('container')->getService('newscoop_newscoop.topic_service');
+$topicsCount = $topicService->countBy();
+$cacheKey = $cacheService->getCacheKey(array('topics_add_article_type', $topicsCount), 'topic');
+$repository = $em->getRepository('Newscoop\NewscoopBundle\Entity\Topic');
+if ($cacheService->contains($cacheKey)) {
+    $topics = $cacheService->fetch($cacheKey);
+} else {
+    $topicsQuery = $repository->getTranslatableTopics($lang->getCode());
+    $topics = $topicsQuery->getResult();
+    $cacheService->save($cacheKey, $topics);
+}
+
+foreach ($topics as $topic) {
+    echo '<option value="' . $topic->getTopicId() . '">'
+        . htmlspecialchars($topicService->getReadablePath($topic)) . "</option>\n";
+}
+?>
+        </select>
+    </td>
+</tr>
+<TR>
+    <TD COLSPAN="2">
+    <DIV ALIGN="CENTER">
+    <INPUT TYPE="HIDDEN" NAME="f_article_type" VALUE="<?php  print htmlspecialchars($articleTypeName); ?>">
+    <INPUT TYPE="submit" class="button" NAME="OK" VALUE="<?php echo $translator->trans('Save'); ?>">
+    </DIV>
+    </TD>
+</TR>
+</TABLE>
+</FORM>
+<P>
+<?php if ($articleField->getType() == ArticleTypeField::TYPE_TOPIC) { ?>
+<script>
+UpdateArticleFieldContext();
+</script>
+<?php } ?>
+<?php camp_html_copyright_notice(); ?>
+<?php } ?>

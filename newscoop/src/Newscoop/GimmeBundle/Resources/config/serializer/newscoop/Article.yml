@@ -1,0 +1,218 @@
+Newscoop\Entity\Article:
+    exclusion_policy: ALL
+    properties:
+        number:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["list", "details"]
+            serialized_name: number
+        name:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["list", "details"]
+            serialized_name: title
+        updated:
+            expose: true
+            read_only: true
+            type: DateTime
+            groups: ["list", "details"]
+            serialized_name: updated
+        type:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: type
+        webcode:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["list", "details"]
+            access_type: public_method
+            serialized_name: webcode
+        keywords:
+            expose: true
+            read_only: true
+            type: string
+            groups: ["list", "details"]
+            access_type: public_method
+            serialized_name: keywords
+        language:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            type: string
+            accessor:
+                getter: getLanguageCode
+                setter: setLanguageCode
+            serialized_name: language
+        section:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: section
+            since_version: 1.1
+        issue:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: issue
+            since_version: 1.1
+        published:
+            expose: true
+            read_only: true
+            type: DateTime
+            groups: ["list", "details"]
+            serialized_name: published
+        uploaded:
+            expose: true
+            read_only: true
+            type: DateTime
+            groups: ["list", "details"]
+            serialized_name: created
+            since_version: 1.2
+        articleAuthors:
+            expose: true
+            read_only: true
+            type: author
+            groups: ["list", "details"]
+            serialized_name: authors
+            accessor:
+                getter: getArticleAuthors
+        comments_count:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            type: comments_count
+            serialized_name: comments_count
+            accessor:
+                getter: getView
+            since_version: 1.1
+        recommended_comments_count:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            type: recommended_comments_count
+            serialized_name: recommended_comments_count
+            accessor:
+                getter: getView
+            since_version: 1.1
+        comments_link:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            type: comments_link
+            serialized_name: comments
+            accessor:
+                getter: getView
+        packages:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            access_type: public_method
+            serialized_name: slideshow
+        topics:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            access_type: public_method
+            serialized_name: topics
+        attachments:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            access_type: public_method
+            serialized_name: attachments
+            since_version: 1.1
+        fields:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            type: article_fields
+            serialized_name: fields
+            accessor:
+                getter: getView
+        translations:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            type: article_translations
+            access_type: public_method
+            serialized_name: translations
+            accessor:
+                getter: getView
+        renditions:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            type: article_renditions
+            access_type: public_method
+            serialized_name: renditions
+            accessor:
+                getter: getView
+        reads:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            access_type: public_method
+            serialized_name: reads
+        comments_enabled:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: comments_enabled
+            since_version: 1.1
+        commentsLocked:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: comments_locked
+            since_version: 1.1
+        publication:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: publication
+            accessor:
+                getter: getPublication
+            since_version: 1.2
+        lockTime:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: lockTime
+            since_version: 1.1
+        lockUser:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: lockUser
+            since_version: 1.1
+    virtual_properties:
+        getObject:
+            expose: true
+            groups: ["list", "details"]
+            type: article_url
+            serialized_name: url
+            since_version: 1.1
+        getLanguageObject:
+            expose: true
+            groups: ["list", "details"]
+            serialized_name: languageData
+            since_version: 1.2
+        getWorkflowStatus:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: status
+            accessor:
+                getter: getWorkflowStatus
+        isLocked:
+            expose: true
+            read_only: true
+            groups: ["list", "details"]
+            serialized_name: isLocked
+            accessor:
+                getter: isLocked
+            since_version: 1.1

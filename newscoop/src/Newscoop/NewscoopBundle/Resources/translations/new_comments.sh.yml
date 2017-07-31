@@ -1,0 +1,66 @@
+comments:
+    label:
+        comments: null
+        menu: Komentari
+        banned: null
+        anonymous: null
+        at: u
+        noentries: null
+        showing: null
+        of: null
+        to: null
+        entries: null
+        fullarticle: 'Ceo tekst'
+        hidden: Sakriven
+        approved: Odobren
+        new: Novi
+        editarticle: 'Idi na uređivanje teksta'
+        section: Rubrika
+        comment: Komentar
+        replyto: 'Odgovorite na komentar'
+        subject: Naslov
+        ban: null
+        author: Autor
+        date: null
+        article: Tekst
+        search: Traži
+        show: Prikaži
+        recommended: Preporučeni
+        unrecommended: Nepreporučen
+        editcomment: null
+        actions: Akcije
+        selectstatus: 'Izaberi status'
+        deleted: Obrisano
+        alert: null
+        searchholder: null
+    btn:
+        cancel: Poništi
+        submit: Predaj
+        unrecommend: Nepreporučen
+        recommend: Preporučen
+        delete: Obriši
+        reply: Odgovori
+        edit: 'Brzo uređivanje'
+        close: Zatvori
+        okay: OK
+        filter: Filter
+    msg:
+        deleted: 'Komentar izbrisan'
+        commentinarticle: 'Komentar $4 od $1 u tekstu $2 ($3)'
+        status:
+            new: null
+            approved: null
+            hidden: null
+            single: null
+            all: null
+        error:
+            reach: 'Newscoop nije dostupan. Proverite svoju interent vezu.'
+            deletefromarticle: 'Komentar obrisan od strane $1 iz teksta $2 ($3)'
+            statuschange: null
+            delete: null
+            update: null
+        sure: 'Nepovaratno ćete Izbrisati komentar.'
+        suremultiple: null
+        first: null
+        surequestion: 'Siguri ste da želite to da uradite?'
+        updated: 'Komentar izmenjen.'

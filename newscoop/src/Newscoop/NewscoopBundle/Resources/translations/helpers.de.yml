@@ -1,0 +1,9 @@
+dynatable:
+    page: Seite
+    perPageText: 'Zeige:'
+    pageText: 'Seiten:'
+    recordCountPageBoundTemplate: '{pageLowerBound} zu {pageUpperBound} von'
+    recordCountPageUnboundedTemplate: '{recordsShown} von'
+    recordCountFilteredTemplate: '(aus insgesamt {recordsTotal} Einträgen gefiltert)'
+    recordCountText: 'Zeige '
+    processingText: 'In Berarbeitung...'

@@ -1,0 +1,81 @@
+'If you continue, topic and all subtopics will be detached from all articles, and deleted.': 'Davam etsən, mövzu və bütün altmövzular bütün məqalələrdən çıxarılacaq və silinəcək.'
+'Delete anyway': Silinsin
+'Reset order': 'Sifarişi sıfırla'
+'Order changes will be lost. Are you sure you want to continue?': 'Sifariş dəyişiklikləri itəcək. Davam etmək istədiyinə əminsən?'
+'Topics order saved.': 'Mövzuların sıralaması saxlandı.'
+'Show languages': 'Dilləri göstər'
+'Save order': 'Sifarişi saxla'
+'Click to edit': 'Dəyişmək üçün kliklə'
+'Add root topic': 'Əsas mövzunu əlavə et'
+'Topic was deleted.': 'Mövzu silindi.'
+'The topic name is already in use by another topic.': 'Təklif edilən mövzu adı başqa mövzuda istifadə edilir.'
+'You must enter a name for the topic.': 'Mövzu üçün ad daxil etməlisən.'
+'You must choose a language for the topic.': 'Sən mövzu üçün dil seçməlisən.'
+'This topic has subtopics, therefore it cannot be deleted.': 'Bu mövzunun alt mövzuları olduğu üçün silinə bilməz.'
+'Add translation:': 'Tərcümə Əlavə Et:'
+'Add subtopic:': 'Alt mövzu əlavə et:'
+Top: Üst
+'You do not have the right to add topics.': 'Mövzu əlavə etməyə ixtiyarın yoxdur.'
+'You do not have the right to delete topics.': 'Mövzuları silməyə ixtiyarın yoxdur.'
+'Are you sure you want to delete the topic $1?': '$1 adlı mövzunu silmək istədiyinə əminsən?'
+'You do not have the right to change topic name.': 'Mövzu adını dəyişməyə ixtiyarın yoxdur.'
+'The topic $1 could not be deleted.': '$1 adlı mövzu silinə bilmədi.'
+'Adding new topic': 'Yeni mövzu əlavə et'
+'Deleting topic': 'Mövzunun silinməsi'
+'Change topic name': 'Mövzu adını dəyiş'
+'There are $1 articles using the topic.': 'Mövzunu istifadə edən $1 məqalə mövcuddur.'
+'Search for topics': 'Mövzu axtar'
+topics:
+    tip: null
+    label:
+        all: null
+        filterbylang: null
+        search: null
+        filterplaceholder: null
+        addroot: null
+        topicname: null
+        expandcollapse: null
+        changename: null
+        for: null
+        addsubtopic: null
+        subtopicname: null
+        addtranslation: null
+        topictranslations: null
+        choose: null
+        translationstring: null
+        tree: null
+    title: null
+    btn:
+        hide: null
+        remove: null
+        edit: null
+        close: null
+        add: null
+        save: null
+        saveandclose: null
+        removetrans: null
+    alerts:
+        languagenotfound: null
+        translationadded: null
+        translationexists: null
+        beforedelete: null
+        wrongparams: null
+        ordersaved: null
+        saved: null
+        beforedeleteinfo: null
+    added: null
+    failedfind: null
+    failedfindTranslation: null
+    removed: null
+    exists: null
+    existsname: null
+    removedTranslation: null
+    failedremoveTranslation: null
+    updated: null
+    error: null
+    csrfinvalid: null
+    tooshort: null
+    toolong: null
+    attachtopics: null
+    attachedtopics: null
+    attached: null
