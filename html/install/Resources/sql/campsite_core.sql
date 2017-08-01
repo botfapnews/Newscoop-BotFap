@@ -2574,6 +2574,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `output_publication`;
 CREATE TABLE `output_publication` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `fk_output_id` int(11) unsigned NOT NULL,
   `fk_publication_id` int(11) unsigned NOT NULL,
   `fk_language_id` int(11) unsigned NOT NULL,
   `theme_path` varchar(255) NOT NULL,
